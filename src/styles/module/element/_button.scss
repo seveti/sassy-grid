@@ -1,0 +1,33 @@
+// Default Button
+@mixin button {
+  @include border-radius(20px);
+  @include padding(10px, 20px);
+  display: inline-block;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: {
+    family: 'Ariel';
+    size: 16px;
+    weight: bold;
+  }
+}
+
+// Primary Button
+@mixin button--primary {
+  @include border-radius(20px);
+  @include padding(10px, 20px);
+  display: inline-block;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $white;
+  background-color: $turquoise;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+.button--primary { @include button--primary; }

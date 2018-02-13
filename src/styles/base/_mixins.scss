@@ -1,0 +1,36 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+
+// Padding
+// -------
+
+
+  
+
+@mixin padding { padding: 3rem 1.5rem; }
+@mixin padding-small { padding: 1rem 1.5rem; }
+@mixin padding-medium { padding: 9rem 1.5rem; }
+@mixin padding-large { padding: 18rem 1.5rem; }
+
+@mixin padding-top { padding-top: 1rem; }
+
+
+@mixin padding($tb: 0px, $lr: 0px) {
+    padding: {
+      top: $tb;
+      left: $lr;
+      bottom: $tb;
+      right: $lr;
+    }
+  
+  }
+
+// Border
+// ------
+
+@mixin border { border: 1px solid black; }

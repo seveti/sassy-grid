@@ -1,0 +1,35 @@
+
+// Padding
+// -------
+
+.padding { @include padding; }
+.padding-small { @include padding-small; }
+.padding-medium { @include padding-medium; }
+.padding-large { @include padding-large; }
+
+// Border
+// ------
+
+.border { @include border; }
+
+
+.hide-desktop {
+    @include tablet-up {
+        display: none;
+    }
+
+    @include mobile-only {
+        display: block;
+    }
+}
+
+
+.hide-mobile {
+    @include tablet-up {
+        display: block;
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+}

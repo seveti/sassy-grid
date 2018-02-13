@@ -1,0 +1,124 @@
+$text-strong: bold;
+$weight-normal: normal;
+$background: black;
+$border: blue;
+
+
+$content-heading-color: $text-strong;
+$content-heading-weight: $weight-normal;
+$content-heading-line-height: 1.125;
+
+$content-blockquote-background-color: $background;
+$content-blockquote-border-left: 5px solid $border;
+$content-blockquote-padding: 1.25em 1.5em;
+
+$content-pre-padding: 1.25em 1.5em;
+
+$content-table-cell-border: 1px solid $border;
+$content-table-cell-border-width: 0 0 1px;
+$content-table-cell-padding: 0.5em 0.75em;
+$content-table-cell-heading-color: $text-strong;
+$content-table-row-hover-background-color: $background;
+$content-table-head-cell-border-width: 0 0 2px;
+$content-table-head-cell-color: $text-strong;
+$content-table-foot-cell-border-width: 2px 0 0;
+$content-table-foot-cell-color: $text-strong;
+
+  li + li {
+      margin-top: 0.25em
+  }
+
+  // Block
+  p,
+  dl,
+  ol,
+  ul,
+  blockquote,
+  pre,
+  table{
+        margin-bottom: 1em;
+    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $content-heading-color;
+    font-weight: $content-heading-weight;
+    line-height: $content-heading-line-height;
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+  }
+
+  h5 {
+    font-size: 1.125em;
+    margin-bottom: 0.5em;
+  }
+
+  h6 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  blockquote {
+    background-color: $content-blockquote-background-color;
+    border-left: $content-blockquote-border-left;
+    padding: $content-blockquote-padding;
+  }
+
+  ol {
+    list-style: decimal outside;
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  ul {
+    list-style: disc outside;
+    margin-left: 2em;
+    margin-top: 1em;
+    ul {
+        list-style-type: circle;
+        margin-top: 0.5em;
+    }
+
+      ul {
+        list-style-type: square;
+      }
+  }
+
+
+
+  dd {
+    margin-left: 2em;
+  }
+
+  pre {
+    overflow-x: auto;
+    padding: $content-pre-padding;
+    white-space: pre;
+    word-wrap: normal;
+  }
+
+  sup,
+  sub {
+    font-size: 75%;
+  }
