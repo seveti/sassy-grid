@@ -1,17 +1,6 @@
-@mixin section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "module";
-}
-
 // Section class
-.section {
-    @include section;
-
-    // Section Container class
-    &--container {
-        @include section;
-        grid-template-columns: 1fr minmax(auto, 1080px) 1fr;
-        grid-template-areas: ". module .";
-    }
+@mixin container {
+    display: grid;
+    max-width: 1080px;
+    margin: 0 auto;
 }

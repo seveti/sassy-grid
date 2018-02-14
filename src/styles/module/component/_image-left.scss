@@ -1,0 +1,33 @@
+// Image Left
+@mixin image-left {
+    @include container;
+    display: grid;
+
+    @include tablet-up {
+        @include col-two;
+        @include padding-top;
+    }
+
+    @include mobile-only {
+        @include col-one;
+        @include padding-top;
+    }
+}
+
+// Image Left -- Home
+.image-left {
+
+    &--right-stack {
+        @include image-left;
+
+        @include image-left--right-stack;
+        
+        @mixin block {
+            display: grid;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-size: 16px;
+        }
+    }
+}

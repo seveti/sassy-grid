@@ -1,48 +1,6 @@
-// Default Hero
-@mixin hero {
-    grid-area: module;
-    display: grid;
-    
-    @include tablet-up {
-        @include col-one;
-        grid-template-rows: repeat(1, 1fr);
-    }
-    @include mobile-only {
-        @include col-one;
-        grid-template-rows: repeat(1, 1fr);
-    }
-
-    @mixin block {
-        @include padding;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    .block {
-        &__content {
-            @include block;
-
-            @include desktop-up {
-                background-image: url('https://placeholdit.co//i/1080x120?bg=ec3d62');
-            }
-            @include tablet-only {
-                background-image: url('https://placeholdit.co//i/1080x120?bg=ec9a3d');
-            }
-            @include mobile-only {
-                background-image: url('https://placeholdit.co//i/1080x120?bg=3d8bec');
-            }
-        }
-    }
-}
-
-.hero { @include hero; }
-
-
-
-// Hero on Patient Homepage
-@mixin hero--pat {
-    grid-area: module;
+// Hero Three Block
+@mixin hero-three-block {
+    @include container;
     display: grid;
     grid-gap: 1rem;
         
@@ -63,6 +21,11 @@
         grid-template-rows: repeat(3, minmax(300px, auto));
         grid-template-areas: none;
     }
+}
+
+// Hero Three Block -- Patient Hero
+.hero-three-block--pat-hero {
+    @include hero-three-block;
 
     @mixin block {
         display: grid;
@@ -143,6 +106,14 @@
             margin-bottom: .5rem;
         }
 
+        &__body {
+            padding-bottom: 1em;
+        }
+
+        &__image {
+            display: block;
+        }
+
         &__button {
             margin-top: 1rem;
         }
@@ -159,7 +130,4 @@
             }
         }
     }
-
 }
-
-.hero--pat { @include hero--pat; }

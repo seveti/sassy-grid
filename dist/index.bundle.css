@@ -327,17 +327,6 @@ th {
   .hide-mobile {
     display: none; } }
 
-.section {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "module"; }
-  .section--container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "module";
-    grid-template-columns: 1fr minmax(auto, 1080px) 1fr;
-    grid-template-areas: ". module ."; }
-
 li + li {
   margin-top: 0.25em; }
 
@@ -436,135 +425,110 @@ sub {
     color: #fefefe;
     background-color: #3273dc; }
 
-.hero {
-  grid-area: module;
-  display: grid; }
-  @media only screen and (min-width: 480px) {
-    .hero {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr); } }
-  @media only screen and (max-width: 480px) {
-    .hero {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(1, 1fr); } }
-  .hero .block__content {
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover; }
-    @media only screen and (min-width: 768px) {
-      .hero .block__content {
-        background-image: url("https://placeholdit.co//i/1080x120?bg=ec3d62"); } }
-    @media only screen and (min-width: 480px) and (max-width: 768px) {
-      .hero .block__content {
-        background-image: url("https://placeholdit.co//i/1080x120?bg=ec9a3d"); } }
-    @media only screen and (max-width: 480px) {
-      .hero .block__content {
-        background-image: url("https://placeholdit.co//i/1080x120?bg=3d8bec"); } }
-
-.hero--pat {
-  grid-area: module;
+.hero-three-block--pat-hero {
+  display: grid;
+  max-width: 1080px;
+  margin: 0 auto;
   display: grid;
   grid-gap: 1rem; }
   @media only screen and (min-width: 768px) {
-    .hero--pat {
+    .hero-three-block--pat-hero {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       padding-top: 1rem;
       grid-template-rows: repeat(2, minmax(300px, auto));
       grid-template-areas: "left left rt" "left left rb"; } }
   @media only screen and (min-width: 480px) and (max-width: 768px) {
-    .hero--pat {
+    .hero-three-block--pat-hero {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, minmax(300px, auto));
       grid-template-areas: none; } }
   @media only screen and (max-width: 480px) {
-    .hero--pat {
+    .hero-three-block--pat-hero {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       grid-template-rows: repeat(3, minmax(300px, auto));
       grid-template-areas: none; } }
-  .hero--pat .block--left {
-    display: grid;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-size: 16px; }
-    @media only screen and (min-width: 768px) {
-      .hero--pat .block--left {
-        grid-area: left;
-        background-image: url("https://placeholdit.co//i/700x615?bg=ec3d62"); } }
-    @media only screen and (min-width: 480px) and (max-width: 768px) {
-      .hero--pat .block--left {
-        background-image: url("https://placeholdit.co//i/715x300?bg=ec9a3d"); } }
+  .hero-three-block--pat-hero .block__title {
+    margin-bottom: .5rem; }
+  .hero-three-block--pat-hero .block__body {
+    padding-bottom: 1em; }
+  .hero-three-block--pat-hero .block__image {
+    display: block; }
+  .hero-three-block--pat-hero .block__button {
+    margin-top: 1rem; }
+  .hero-three-block--pat-hero .block__subtitle {
+    font-size: 14px; }
+    @media only screen and (min-width: 480px) {
+      .hero-three-block--pat-hero .block__subtitle {
+        max-width: 200px; } }
     @media only screen and (max-width: 480px) {
-      .hero--pat .block--left {
-        background-image: url("https://placeholdit.co//i/350x300?bg=3d8bec"); } }
-  .hero--pat .block--rt {
-    display: grid;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-size: 16px; }
-    @media only screen and (min-width: 768px) {
-      .hero--pat .block--rt {
-        grid-area: rt;
-        background-image: url("https://placeholdit.co//i/350x300?bg=ec3d62"); } }
-    @media only screen and (min-width: 480px) and (max-width: 768px) {
-      .hero--pat .block--rt {
-        background-image: url("https://placeholdit.co//i/715x300?bg=ec9a3d"); } }
-    @media only screen and (max-width: 480px) {
-      .hero--pat .block--rt {
-        background-image: url("https://placeholdit.co//i/350x300?bg=3d8bec"); } }
-  .hero--pat .block--rb {
-    display: grid;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    font-size: 16px; }
-    @media only screen and (min-width: 768px) {
-      .hero--pat .block--rb {
-        grid-area: rb;
-        background-image: url("https://placeholdit.co//i/350x300?bg=ec3d62"); } }
-    @media only screen and (min-width: 480px) and (max-width: 768px) {
-      .hero--pat .block--rb {
-        background-image: url("https://placeholdit.co//i/715x300?bg=ec9a3d"); } }
-    @media only screen and (max-width: 480px) {
-      .hero--pat .block--rb {
-        background-image: url("https://placeholdit.co//i/350x300?bg=3d8bec"); } }
-  .hero--pat .block__top {
+      .hero-three-block--pat-hero .block__subtitle {
+        padding: 1rem 1.5rem;
+        background-color: #ccc; } }
+  .hero-three-block--pat-hero .block__top {
     padding: 1rem 1.5rem;
     align-self: start; }
     @media only screen and (max-width: 480px) {
-      .hero--pat .block__top {
+      .hero-three-block--pat-hero .block__top {
         justify-self: center;
         text-align: center; } }
-  .hero--pat .block__bottom {
+  .hero-three-block--pat-hero .block__bottom {
     width: 100%;
     align-self: end; }
     @media only screen and (min-width: 480px) {
-      .hero--pat .block__bottom {
+      .hero-three-block--pat-hero .block__bottom {
         padding: 1rem 1.5rem; } }
     @media only screen and (max-width: 480px) {
-      .hero--pat .block__bottom {
+      .hero-three-block--pat-hero .block__bottom {
         justify-self: center;
         text-align: center; } }
-  .hero--pat .block__title {
-    margin-bottom: .5rem; }
-  .hero--pat .block__button {
-    margin-top: 1rem; }
-  .hero--pat .block__subtitle {
-    font-size: 14px; }
-    @media only screen and (min-width: 480px) {
-      .hero--pat .block__subtitle {
-        max-width: 200px; } }
-    @media only screen and (max-width: 480px) {
-      .hero--pat .block__subtitle {
-        padding: 1rem 1.5rem;
-        background-color: #ccc; } }
+  .hero-three-block--pat-hero .block--left {
+    display: grid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 16px; }
+  .hero-three-block--pat-hero .block--rt {
+    display: grid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 16px; }
+  .hero-three-block--pat-hero .block--rb {
+    display: grid;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 16px; }
+  @media only screen and (min-width: 768px) {
+    .hero-three-block--pat-hero .block--left {
+      grid-area: left;
+      background-image: url("https://placeholdit.co//i/700x615?bg=ec3d62"); } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .hero-three-block--pat-hero .block--left {
+      background-image: url("https://placeholdit.co//i/715x300?bg=ec9a3d"); } }
+  @media only screen and (max-width: 480px) {
+    .hero-three-block--pat-hero .block--left {
+      background-image: url("https://placeholdit.co//i/350x300?bg=3d8bec"); } }
+  @media only screen and (min-width: 768px) {
+    .hero-three-block--pat-hero .block--rt {
+      grid-area: rt;
+      background-image: url("https://placeholdit.co//i/350x300?bg=ec3d62"); } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .hero-three-block--pat-hero .block--rt {
+      background-image: url("https://placeholdit.co//i/715x300?bg=ec9a3d"); } }
+  @media only screen and (max-width: 480px) {
+    .hero-three-block--pat-hero .block--rt {
+      background-image: url("https://placeholdit.co//i/350x300?bg=3d8bec"); } }
+  @media only screen and (min-width: 768px) {
+    .hero-three-block--pat-hero .block--rb {
+      grid-area: rb;
+      background-image: url("https://placeholdit.co//i/350x300?bg=ec3d62"); } }
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .hero-three-block--pat-hero .block--rb {
+      background-image: url("https://placeholdit.co//i/715x300?bg=ec9a3d"); } }
+  @media only screen and (max-width: 480px) {
+    .hero-three-block--pat-hero .block--rb {
+      background-image: url("https://placeholdit.co//i/350x300?bg=3d8bec"); } }
