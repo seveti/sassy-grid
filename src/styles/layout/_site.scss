@@ -1,0 +1,17 @@
+
+// Default site layout
+.site {
+    @include grid(auto, repeat(3, auto));
+
+    &__header {
+        @include grid;
+    }
+
+    &__body {
+        @include grid;
+    }
+
+    &__footer {
+        @include grid;
+    }
+}

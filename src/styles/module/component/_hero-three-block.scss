@@ -1,42 +1,41 @@
-// Hero Three Block
+// Variables
+
+
 @mixin hero-three-block {
-    @include container;
-    display: grid;
-    grid-gap: 1rem;
+    @include component-container;
+
+    .grid {
+        @include grid;
         
-    @include desktop-up {
-        @include col-three;
-        @include padding-top;
-        grid-template-rows: repeat(2, minmax(300px, auto));
-        grid-template-areas: "left left rt"
-        "left left rb";
-    }
-    @include tablet-only {
-        @include col-one;
-        grid-template-rows: repeat(3, minmax(300px, auto));
-        grid-template-areas: none;
-    }
-    @include mobile-only {
-        @include col-one;
-        grid-template-rows: repeat(3, minmax(300px, auto));
-        grid-template-areas: none;
-    }
+        @include desktop-up {
+            @include grid(repeat(3, 1fr), repeat(2, minmax(300px, auto)), 1rem);
+            grid-template-areas: "left left rt"
+            "left left rb";
+            padding: $size-6 0 0;
+        }
+        @include tablet-only {
+            @include grid(repeat(1, 1fr), repeat(3, minmax(300px, auto)), 1rem);
+            grid-template-areas: none;
+        }
+        @include mobile-only {
+            @include grid(repeat(1, 1fr), repeat(3, minmax(300px, auto)), 1rem);
+            grid-template-areas: none;
+        }
+    
+        @mixin block {
+            @include grid;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-size: 16px;
+        }
 
-    @mixin block {
-        display: grid;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        font-size: 16px;
-    }
-
-    .block {
         &__title {
             margin-bottom: .5rem;
         }
 
         &__body {
-            padding-bottom: 1em;
+            padding: 0 0 $size-6;
         }
 
         &__image {
@@ -54,14 +53,14 @@
                 max-width: 200px;
             }
             @include mobile-only {
-                @include padding-small;
+                padding: $size-6;
                 background-color: #ccc;
             }
         }
 
 
         &__top {
-            @include padding-small;
+            padding: $size-6;
             align-self: start;
             @include mobile-only {
                 justify-self: center;
@@ -73,7 +72,7 @@
             width: 100%;
             align-self: end;
             @include tablet-up {
-                @include padding-small;
+                padding: $size-6;
             }
             @include mobile-only {
                 justify-self: center;
@@ -88,47 +87,54 @@
     }
 }
 
-// Hero Three Block -- Patient Hero
-.hero-three-block--pat-hero {
-    @include hero-three-block;
 
-    .block {        
-        &--left {
-            @include desktop-up {
-                grid-area: left;
-                background-image: url('https://placeholdit.co//i/700x615?bg=ec3d62');
-            }
-            @include tablet-only {
-                background-image: url('https://placeholdit.co//i/715x300?bg=ec9a3d');
-            }
-            @include mobile-only {
-                background-image: url('https://placeholdit.co//i/350x300?bg=3d8bec');
-            }
-        }
+// Default Hero Three Block Class
+.hero-three-block {
+    @include hero-three-block;
     
-        &--rt {
-            @include desktop-up {
-                grid-area: rt;
-                background-image: url('https://placeholdit.co//i/350x300?bg=ec3d62');
+
+    // -- Patient Homepage
+    &--pat-home {
+        @include hero-three-block;
+
+        .grid {        
+            &--left {
+                @include desktop-up {
+                    grid-area: left;
+                    background-image: url('https://placeholdit.co//i/700x615?bg=ec3d62');
+                }
+                @include tablet-only {
+                    background-image: url('https://placeholdit.co//i/715x300?bg=ec9a3d');
+                }
+                @include mobile-only {
+                    background-image: url('https://placeholdit.co//i/350x300?bg=3d8bec');
+                }
             }
-            @include tablet-only {
-                background-image: url('https://placeholdit.co//i/715x300?bg=ec9a3d');
+        
+            &--rt {
+                @include desktop-up {
+                    grid-area: rt;
+                    background-image: url('https://placeholdit.co//i/350x300?bg=ec3d62');
+                }
+                @include tablet-only {
+                    background-image: url('https://placeholdit.co//i/715x300?bg=ec9a3d');
+                }
+                @include mobile-only {
+                    background-image: url('https://placeholdit.co//i/350x300?bg=3d8bec');
+                }
             }
-            @include mobile-only {
-                background-image: url('https://placeholdit.co//i/350x300?bg=3d8bec');
-            }
-        }
-    
-        &--rb {
-            @include desktop-up {
-                grid-area: rb;
-                background-image: url('https://placeholdit.co//i/350x300?bg=ec3d62');
-            }
-            @include tablet-only {
-                background-image: url('https://placeholdit.co//i/715x300?bg=ec9a3d');
-            }
-            @include mobile-only {
-                background-image: url('https://placeholdit.co//i/350x300?bg=3d8bec');
+        
+            &--rb {
+                @include desktop-up {
+                    grid-area: rb;
+                    background-image: url('https://placeholdit.co//i/350x300?bg=ec3d62');
+                }
+                @include tablet-only {
+                    background-image: url('https://placeholdit.co//i/715x300?bg=ec9a3d');
+                }
+                @include mobile-only {
+                    background-image: url('https://placeholdit.co//i/350x300?bg=3d8bec');
+                }
             }
         }
     }

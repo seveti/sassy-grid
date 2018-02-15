@@ -1,0 +1,45 @@
+// Variables
+$module-container-width: 1080px;
+
+
+@mixin module {
+    @include grid;
+}
+
+
+@mixin module-container {
+    @include grid(minmax(auto, $module-container-width));
+    justify-self: center;
+}
+
+@mixin block {
+    @include grid;
+}
+
+.module {
+    @include module;
+
+    // Default Module container
+    &--container {
+        @include module-container;
+        justify-self: center;
+    }
+
+    // Header for HCP 1-1
+    &--hcp-1-1-header {
+        @include module;
+        background-image: url('https://placeholdit.co//i/1080x600?bg=385732');
+    }
+
+    // Bg for HCP two cols
+    &--hcp-1-1-two-columns {
+        @include module;
+        background-image: url('https://placeholdit.co//i/1080x600?bg=385732');
+    }
+
+    // bg for HCP video
+    &--hcp-1-1-video {
+        @include module;
+        background-image: url('https://placeholdit.co//i/1080x600?bg=235952');
+    }
+}

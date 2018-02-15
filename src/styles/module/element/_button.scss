@@ -1,7 +1,7 @@
 // Default Button
 @mixin button {
   @include border-radius(20px);
-  @include padding(10px, 20px);
+  padding: 10px 20px;
   display: inline-block;
   line-height: 1;
   text-transform: uppercase;
@@ -16,7 +16,7 @@
 // Primary Button
 @mixin button--primary {
   @include border-radius(20px);
-  @include padding(10px, 20px);
+  padding: 10px 20px;
   display: inline-block;
   line-height: 1;
   text-transform: uppercase;

@@ -1,33 +1,74 @@
-// Image Left
+
 @mixin image-left {
-    @include container;
-    display: grid;
+    @include component-container;
 
-    @include tablet-up {
-        @include col-two;
-        @include padding-top;
-    }
+    .grid {
+        @include grid;
 
-    @include mobile-only {
-        @include col-one;
-        @include padding-top;
+        @include tablet-up {
+            @include grid(1fr 1fr, auto);
+            padding: $size-6 0 0;
+        }
+    
+        @include mobile-only {
+            @include grid;
+            padding: $size-6 0 0;
+        }
+
+        &__image {
+            align-self: start;
+        }
+
+        &__text {
+            align-self: start;
+            padding: $size-6 $size-6 0;
+        }
     }
 }
 
-// Image Left -- Home
+// Default Image Left Class
 .image-left {
+    @include image-left;
 
-    &--right-stack {
+    &--hcp-1-1 {
         @include image-left;
 
-        @include image-left--right-stack;
-        
-        @mixin block {
-            display: grid;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            font-size: 16px;
+        .grid {
+            &__text {
+                align-self: center;
+            }
         }
     }
+
+    &--video-button {
+        @include image-left;
+
+        .grid {
+            @include desktop-up {
+                @include grid(1fr 1fr, auto);
+                padding: $size-3 0;
+            }
+        
+            @include tablet-down {
+                @include grid;
+                padding: $size-3 0;
+            }
+
+            &__image {
+                @include tablet-down {
+                    justify-self: center;
+                }
+            }
+
+            &__body {
+                @include grid;
+                padding: $size-6 $size-6 0;
+            }
+
+            &__button {
+                align-self: end;
+            }
+        }
+    }
+
 }

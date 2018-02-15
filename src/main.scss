@@ -1,22 +1,33 @@
-// Theme
+// Theme Settings
 @import './styles/theme/default';
 @import './styles/theme/ultragenyx-pat';
 
 // Base
 @import './styles/base/reset';
-@import './styles/base/grid';
 @import './styles/base/mixins';
+@import './styles/base/grid';
 @import './styles/base/base';
 @import './styles/base/helper';
 
 // Layout
-@import './styles/layout/header';
-@import './styles/layout/section';
-@import './styles/layout/footer';
 @import './styles/layout/site';
+@import './styles/layout/header';
+@import './styles/layout/body';
+@import './styles/layout/footer';
+
 
 // Module
-@import './styles/module/includes';
+@import './styles/module/module';
+
+@import './styles/module/element/typography';
+@import './styles/module/element/button';
+
+@import './styles/module/component/component';
+@import './styles/module/component/hero-three-block';
+@import './styles/module/component/image-left';
+@import './styles/module/component/title-two-columns';
+@import './styles/module/component/title-icons';
+
 
 // State
 
