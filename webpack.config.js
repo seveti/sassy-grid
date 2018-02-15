@@ -1,7 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const autoprefixer = require('autoprefixer');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
@@ -31,6 +32,12 @@ module.exports = {
       new ExtractTextPlugin({ // define where to save the file
         filename: '[name].bundle.css',
         allChunks: true,
+      }),
+      new webpack.LoaderOptionsPlugin({
+          minimize: true,
+          options: {
+              postcss: [autoprefixer]       
+          }
       }),
       new UglifyJsPlugin({
         test: /\.js($|\?)/i
