@@ -1,0 +1,33 @@
+
+/***************
+Replacing Flatsome Theme Defaults
+***************/
+.color-primary {
+    color: $color-turquoise;
+  }
+
+.color-secondary {
+    color: $color-turquoise-light;
+}
+
+.primary {
+  background-color: $color-turquoise;
+
+  &:hover {
+    background-color: $color-turquoise-light;
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+
+.secondary {
+    background-color: $color-turquoise;
+  
+    &:hover {
+      background-color: $color-turquoise-light;
+  
+      text-decoration: none;
+      color: $color-white;
+    }
+  }

@@ -1,21 +1,20 @@
-
 // Responsive
 // -------------------
  // Tablet, Desktop, and Widescreen
  @mixin tablet-up { 
-  @media only screen and (min-width: $break-mobile) { @content; }
+  @media only screen and (min-width: $breakpoint-mobile) { @content; }
 }
 @mixin desktop-up {
-  @media only screen and (min-width: $break-tablet) { @content; }
+  @media only screen and (min-width: $breakpoint-tablet) { @content; }
 } // Desktop and Widescreen
 
-@mixin tablet-down { @media only screen and (max-width: $break-tablet) { @content; } } // Tablet and Mobile
-@mixin desktop-down { @media only screen and (max-width: $break-desktop) { @content; } } // Desktop, Tablet, and Mobile
+@mixin tablet-down { @media only screen and (max-width: $breakpoint-tablet) { @content; } } // Tablet and Mobile
+@mixin desktop-down { @media only screen and (max-width: $breakpoint-desktop) { @content; } } // Desktop, Tablet, and Mobile
 
-@mixin mobile-only { @media only screen and (max-width: $break-mobile) { @content; } } // Mobile only
-@mixin tablet-only { @media only screen and (min-width: $break-mobile) and (max-width: $break-tablet) { @content; } } // Tablet only
-@mixin desktop-only { @media only screen and (min-width: $break-tablet) and (max-width: $break-desktop) { @content; } } // Desktop only
-@mixin widescreen-only { @media only screen and (min-width: $break-desktop) { @content; }} // Widescreen only
+@mixin mobile-only { @media only screen and (max-width: $breakpoint-mobile) { @content; } } // Mobile only
+@mixin tablet-only { @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) { @content; } } // Tablet only
+@mixin desktop-only { @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) { @content; } } // Desktop only
+@mixin widescreen-only { @media only screen and (min-width: $breakpoint-desktop) { @content; }} // Widescreen only
 
 
 @mixin border-radius($radius) {
@@ -25,7 +24,33 @@
             border-radius: $radius;
 }
 
-// Border
-// ------
-
 @mixin border { border: 1px solid black; }
+
+
+@mixin grid($grid-template-columns: auto, $grid-template-rows: auto) {
+  display: grid;
+  grid-template-columns: $grid-template-columns;
+  grid-template-rows: $grid-template-rows;
+
+  display: -ms-grid;
+  -ms-grid-columns: $grid-template-columns;
+  -ms-grid-rows: $grid-template-rows;
+}
+
+@mixin grid-start($grid-column-start: 1, $grid-row-start: 1) {
+  grid-column-start: $grid-column-start;
+  grid-row-start: $grid-row-start;
+
+  -ms-grid-column: $grid-column-start;
+  -ms-grid-row: $grid-row-start;
+}
+
+@mixin align($align-self: start) {
+  align-self: $align-self;
+  -ms-grid-row-align: $align-self;
+}
+
+@mixin justify($justify-self: start) {
+  justify-self: $justify-self;
+  -ms-grid-column-align: $justify-self;
+}

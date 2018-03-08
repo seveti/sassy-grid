@@ -1,0 +1,22 @@
+@mixin icon {
+    @include justify(center);
+
+    @include desktop-up {
+        width: 250px;
+        height: 250px;
+    }
+
+    @include tablet-only {
+        width: 200px;
+        height: 200px;
+    }
+
+    @include mobile-only {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.icon {
+    @include icon;
+}

@@ -1,0 +1,29 @@
+@mixin section {
+    @include grid;
+}
+
+.section {
+    @include section;
+}
+
+.section--small {
+    @include section;
+    @include padding--small;
+}
+
+.section--medium {
+    @include section;
+    @include padding--medium;
+}
+
+.section--large {
+    @include section;
+    @include padding--large;
+}
+
+.section--turquoise {
+    @include section;
+    @include padding--medium;
+
+    background-color: $color-turquoise;
+}

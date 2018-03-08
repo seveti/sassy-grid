@@ -1,11 +1,16 @@
 // Variables
 $footer-container-width: 1080px;
 
+@mixin footer {
+    
+}
+
 @mixin footer-container {
     @include grid(minmax(auto, $footer-container-width));
     justify-self: center;
 }
 
 .site__footer {
+    @include footer;
     @include footer-container;
 }

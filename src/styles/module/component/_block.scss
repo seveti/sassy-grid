@@ -1,0 +1,41 @@
+@mixin block {
+    padding: $size-8 0;
+
+    &__title {
+        padding: 0 0 $size-8;
+    }
+
+    &__body {
+        padding: $size-8 0;
+    }
+}
+
+.block {
+    @include block;
+}
+
+
+.block--narrow {
+    @include block;
+
+    width: 250px;
+    text-align: center;
+}
+
+.block--center {
+    @include block;
+    @include justify(center);
+    text-align: center;
+    color: $color-white;
+}
+
+.block--white {
+
+    h1, h2 {
+        color: $color-white;
+    }
+    
+    p {
+        color: $color-white;
+    }
+}

@@ -1,9 +1,4 @@
-
-// Border
-// ------
-
 .border { @include border; }
-
 
 .hide-desktop {
     @include tablet-up {
@@ -15,7 +10,6 @@
     }
 }
 
-
 .hide-mobile {
     @include tablet-up {
         display: block;
@@ -24,4 +18,12 @@
     @include mobile-only {
         display: none;
     }
+}
+
+.align-center {
+    @include align(center);
+}
+
+.justify-center {
+    @include justify(center);
 }

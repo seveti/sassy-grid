@@ -1,124 +1,87 @@
-$text-strong: bold;
-$weight-normal: normal;
-$background: black;
-$border: blue;
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-normal;
+}
 
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+  font-weight: bold;
+  color: inherit;
+  clear: both;
+  line-height: 1.1;
+  padding: 0 0 $size-10;
+}
 
-$content-heading-color: $text-strong;
-$content-heading-weight: $weight-normal;
-$content-heading-line-height: 1.125;
-
-$content-blockquote-background-color: $background;
-$content-blockquote-border-left: 5px solid $border;
-$content-blockquote-padding: 1.25em 1.5em;
-
-$content-pre-padding: 1.25em 1.5em;
-
-$content-table-cell-border: 1px solid $border;
-$content-table-cell-border-width: 0 0 1px;
-$content-table-cell-padding: 0.5em 0.75em;
-$content-table-cell-heading-color: $text-strong;
-$content-table-row-hover-background-color: $background;
-$content-table-head-cell-border-width: 0 0 2px;
-$content-table-head-cell-color: $text-strong;
-$content-table-foot-cell-border-width: 2px 0 0;
-$content-table-foot-cell-color: $text-strong;
-
-  li + li {
-      margin-top: 0.25em
+h1 {
+  @include desktop-up {
+    font-size: 30px;
   }
 
-  // Block
-  p,
-  dl,
-  ol,
-  ul,
-  blockquote,
-  pre,
-  table{
-        margin-bottom: 1em;
-    }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $content-heading-color;
-    font-weight: $content-heading-weight;
-    line-height: $content-heading-line-height;
+  @include tablet-only {
+    font-size: 26px;
+  }
+  
+  @include mobile-only {
+    font-size: 20px;
   }
 
-  h1 {
-    font-size: 2em;
-    margin-bottom: 0.5rem;
+  color: $color-h1;
+  text-transform: uppercase;
+}
+
+h2 {
+  @include desktop-up {
+    font-size: 26px;
   }
 
-  h2 {
-    font-size: 1.75em;
-    margin-bottom: 0.5em;
+  @include tablet-only {
+    font-size: 26px;
+  }
+  
+  @include mobile-only {
+    font-size: 20px;
+  }
+  
+  color: $color-h2;
+  text-transform: uppercase;
+}
+
+h3 {
+  @include desktop-up {
+    font-size: 20px;
   }
 
-  h3 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
+  @include tablet-only {
+    font-size: 20px;
+  }
+  
+  @include mobile-only {
+    font-size: 20px;
   }
 
-  h4 {
-    font-size: 1.25em;
-    margin-bottom: 0.5em;
+  color: $color-h3;
+  text-transform: uppercase;
+}
+
+h4 {
+  @include desktop-up {
+    font-size: 20px;
   }
 
-  h5 {
-    font-size: 1.125em;
-    margin-bottom: 0.5em;
+  @include tablet-only {
+    font-size: 16px;
+  }
+  
+  @include mobile-only {
+    font-size: 16px;
   }
 
-  h6 {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
+  color: $color-h4;
+}
 
-  blockquote {
-    background-color: $content-blockquote-background-color;
-    border-left: $content-blockquote-border-left;
-    padding: $content-blockquote-padding;
-  }
+h5 {
+}
 
-  ol {
-    list-style: decimal outside;
-    margin-left: 2em;
-    margin-top: 1em;
-  }
-
-  ul {
-    list-style: disc outside;
-    margin-left: 2em;
-    margin-top: 1em;
-    ul {
-        list-style-type: circle;
-        margin-top: 0.5em;
-    }
-
-      ul {
-        list-style-type: square;
-      }
-  }
-
-
-
-  dd {
-    margin-left: 2em;
-  }
-
-  pre {
-    overflow-x: auto;
-    padding: $content-pre-padding;
-    white-space: pre;
-    word-wrap: normal;
-  }
-
-  sup,
-  sub {
-    font-size: 75%;
-  }
+h6 {
+}

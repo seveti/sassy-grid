@@ -1,0 +1,35 @@
+@mixin play-button {
+    @include grid(1fr);
+
+    &__icon {
+        z-index: 1;
+        opacity: .5;
+        @include grid-start(1);
+        @include justify(center);
+        @include align(center);
+
+        @include desktop-up {
+            width: 100px;
+            height: 100px;
+        }
+        @include tablet-only {
+            width: 95px;
+            height: 95px;
+        }
+        @include mobile-only {
+            width: 95px;
+            height: 95px;
+        }
+    }
+
+    &__bg {
+        @include grid-start(1);
+        @include justify(center);
+        @include align(center);
+    }
+
+}
+
+.play-button {
+    @include play-button;
+}

@@ -1,0 +1,23 @@
+@mixin hero {
+    @include grid(1fr, 1fr);
+    @include padding--large;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include desktop-up {
+        background-image: url('/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png');
+    }
+
+    @include tablet-only {
+        background-image: url('/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png');
+    }
+
+    @include mobile-only {
+        background-image: url('/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png');
+    }
+}
+
+.hero {
+    @include hero;
+}

@@ -1,0 +1,65 @@
+@mixin columns-two {
+    @include desktop-up {
+        @include grid(1fr 1rem 1fr);
+    }
+
+    @include tablet-only {
+        @include grid(1fr 1rem 1fr);
+    }
+
+    @include mobile-only {
+        @include grid(1fr, 1fr 1rem 1fr);
+    }
+
+    &__left {
+        @include grid;
+        @include align(start);
+        @include desktop-up {
+            @include grid-start(1);
+        }
+        
+        @include tablet-only {
+            @include grid-start(1, 1);
+        }
+
+        @include mobile-only {
+            @include grid-start(1, 1);
+        }
+    }
+
+    &__right {
+        @include grid;
+        @include align(start);
+        @include desktop-up {
+            @include grid-start(3);
+        }
+        
+        @include tablet-only {
+            @include grid-start(3, 1);
+        }
+
+        @include mobile-only {
+            @include grid-start(1, 3);
+        }
+    }
+}
+
+.columns-two {
+    @include columns-two;
+}
+
+.columns-two--center {
+    @include columns-two;
+    
+    &__left {
+        @include justify(center);
+    }
+
+    &__center {
+        @include justify(center);
+    }
+
+    &__right {
+        @include justify(center);
+    }
+}
