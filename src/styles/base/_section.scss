@@ -1,0 +1,58 @@
+@mixin section--small {
+    @include grid;
+    @include desktop-up {
+        padding: 2rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 2rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 2rem $size-6;
+    }
+}
+
+.section--small { 
+    @include section--small;
+}
+
+
+@mixin section--medium {
+    @include grid;
+    @include desktop-up {
+        padding: 4rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 4rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 4rem $size-6;
+    }
+}
+
+.section--medium { 
+    @include section--medium;
+}
+
+
+@mixin section--large {
+    @include grid;
+    @include desktop-up {
+        padding: 6rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 6rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 6rem $size-6;
+    }
+}
+
+.section--large { 
+    @include section--large;
+}
