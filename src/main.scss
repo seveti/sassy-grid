@@ -1,9 +1,11 @@
 // Base
 @import "./styles/base/reset";
+@import "./styles/base/responsive";
+@import "./styles/base/grid";
 @import "./styles/base/mixins";
 @import "./styles/base/base";
-@import "./styles/base/helper";
 @import "./styles/base/padding";
+@import "./styles/base/helper";
 
 // Layout
 @import "./styles/layout/site";
@@ -14,15 +16,17 @@
 
 // Element
 @import "./styles/module/element/typography";
+@import "./styles/module/element/title";
+@import "./styles/module/element/body";
 @import "./styles/module/element/button";
 @import "./styles/module/element/play-button";
 
 // Component
-@import "./styles/module/component/container";
-@import "./styles/module/component/section";
 @import "./styles/module/component/block";
 @import "./styles/module/component/columns-three";
 @import "./styles/module/component/columns-two";
+@import "./styles/module/component/two-columns";
+@import "./styles/module/component/three-columns";
 @import "./styles/module/component/hero";
 @import "./styles/module/component/icon";
 

@@ -1,6 +1,4 @@
 @mixin icon {
-    @include justify(center);
-
     @include desktop-up {
         width: 250px;
         height: 250px;

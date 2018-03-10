@@ -1,6 +1,14 @@
-.border { @include border; }
 
-.hide-desktop {
+
+.border--small { 
+    border: 1px solid #ccc;
+}
+
+.border--medium { 
+    border: 3px solid #ccc;
+}
+
+.desktop--hide {
     @include tablet-up {
         display: none;
     }
@@ -10,7 +18,7 @@
     }
 }
 
-.hide-mobile {
+.mobile--hide {
     @include tablet-up {
         display: block;
     }
@@ -20,10 +28,37 @@
     }
 }
 
-.align-center {
-    @include align(center);
+.width--small {
+    width: 250px;
 }
 
-.justify-center {
-    @include justify(center);
+.width--1080 {
+    max-width: 1080px;
 }
+
+
+.text--center {
+    text-align: center;
+}
+
+
+.color--white {
+    color: $color-white;
+
+    h1, h2 {
+        color: $color-white;
+    }
+    
+    p {
+        color: $color-white;
+    }
+}
+
+.background--turquoise {
+    background-color: $color-turquoise;
+}
+
+.background--orange {
+    background-color: $color-orange;
+}
+

@@ -1,0 +1,7 @@
+@mixin title {
+    padding: 0 0 $size-6;
+}
+
+.title {
+    @include title;
+}

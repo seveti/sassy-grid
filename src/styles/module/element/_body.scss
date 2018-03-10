@@ -1,0 +1,7 @@
+@mixin body {
+    padding: $size-6 0;
+}
+
+.body {
+    @include body;
+}
