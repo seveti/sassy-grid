@@ -1,5 +1,4 @@
 @mixin padding--small {
-    @include grid;
     @include desktop-up {
         padding: $size-4 $size-6;
     }
@@ -19,7 +18,6 @@
 
 
 @mixin padding--medium {
-    @include grid;
     @include desktop-up {
         padding: $size-3 $size-6;
     }
@@ -39,7 +37,6 @@
 
 
 @mixin padding--large {
-    @include grid;
     @include desktop-up {
         padding: $size-2 $size-6;
     }
@@ -60,37 +57,30 @@
 
 
 .padding-top--small {
-    @include grid;
     padding-top: $size-8;
 }
 
 .padding-top--medium {
-    @include grid;
     padding-top: $size-6;
 }
 
 .padding-top--large {
-    @include grid;
     padding-top: $size-4;
 }
 
 
 .padding-bottom--xsmall {
-    @include grid;
     padding-bottom: $size-10;
 }
 
 .padding-bottom--small {
-    @include grid;
     padding-bottom: $size-8;
 }
 
 .padding-bottom--medium {
-    @include grid;
     padding-bottom: $size-6;
 }
 
 .padding-bottom--large {
-    @include grid;
     padding-bottom: $size-4;
 }

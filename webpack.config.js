@@ -6,6 +6,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     context: path.resolve(__dirname, "src"),
+    devtool: 'source-map',
     entry: {
       index: './app.js'
     },
@@ -15,29 +16,40 @@ module.exports = {
       filename: '[name].bundle.js'
     },
     module: {
-      rules: [      
-        { // regular css files
-          test: /\.css$/,
-          loader: ExtractTextPlugin.extract({
-            use: 'css-loader?importLoaders=1',
-          })
-        },
+      rules: [  
         { // sass / scss loader for webpack
-          test: /\.(sass|scss)$/,
-          loader: ExtractTextPlugin.extract(['css-loader', 'sass-loader'])
+          test: /\.scss$/,
+          use: ExtractTextPlugin.extract({
+            fallback: 'style-loader',
+            use: [
+              {
+                loader: 'css-loader',
+                options: {
+                    url: true,
+                    minimize: false,
+                    sourceMap: true
+                }
+              }, 
+              {
+                loader: 'sass-loader',
+                options: {
+                    sourceMap: true
+                }
+              }
+            ]
+          })
         }
       ]
     },
     plugins: [
+      new webpack.LoaderOptionsPlugin({
+          options: {
+              postcss: [autoprefixer]
+          }
+      }),
       new ExtractTextPlugin({ // define where to save the file
         filename: '[name].bundle.css',
         allChunks: true,
-      }),
-      new webpack.LoaderOptionsPlugin({
-          minimize: true,
-          options: {
-              postcss: [autoprefixer]       
-          }
       }),
       new UglifyJsPlugin({
         test: /\.js($|\?)/i

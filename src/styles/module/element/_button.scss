@@ -1,7 +1,5 @@
-// Default Button
-@mixin button {
+%button-static {
   @include border-radius(20px);
-  
   padding: 10px 20px;
   display: inline-block;
   line-height: 1;
@@ -15,6 +13,11 @@
     color: $color-white;
     background-color: $color-turquoise;
   }
+}
+
+// Default Button
+@mixin button {
+  @extend %button-static;
 }
 
 .button {
