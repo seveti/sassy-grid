@@ -34,23 +34,10 @@
 }
 
 
-// Align mixin - Placeholder selectors
-%align-start-static { align-self: start; -ms-grid-row-align: start; }
-%align-center-static { align-self: center; -ms-grid-row-align: center; }
-%align-end-static { align-self: end; -ms-grid-row-align: end; }
-
 // Align mixin
 @mixin align($align-self: start) {
-    @if $align-self == "start" {
-        @extend %align-start-static;
-    } @else if $align-self == "center" {
-        @extend %align-center-static;
-    } @else if $align-self == "end" {
-        @extend %align-end-static;
-    } @else {
-        align-self: $align-self;
-        -ms-grid-row-align: $align-self;
-    }
+    align-self: $align-self;
+    -ms-grid-row-align: $align-self;
 }
 
 // Align mixin - Class selectors
@@ -60,23 +47,10 @@
 
 
 
-// Justify mixin - Placeholder selectors
-%justify-start-static { justify-self: start; -ms-grid-column-align: start; }
-%justify-center-static { justify-self: center; -ms-grid-column-align: center; }
-%justify-end-static { justify-self: end; -ms-grid-column-align: end; }
-
 // Justify mixin
 @mixin justify($justify-self: start) {
-    @if $justify-self == "start" {
-        @extend %justify-start-static;
-    } @else if $justify-self == "center" {
-        @extend %justify-center-static;
-    } @else if $justify-self == "end" {
-        @extend %justify-end-static;
-    } @else {
-        justify-self: $justify-self;
-        -ms-grid-column-align: $justify-self;
-    }
+    justify-self: $justify-self;
+    -ms-grid-column-align: $justify-self;
 }
 
 // Justify mixin - Class selectors

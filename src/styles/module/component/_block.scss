@@ -4,8 +4,14 @@
 
 .block {
     @include block;
-}
 
-.block--title {
-    padding: 0 0 $size-6;
+    &--title {
+        @include block;
+        padding: 0 0 $size-6;
+    }
+
+    &--body {
+        @include block;
+        padding: $size-6 0;
+    }
 }

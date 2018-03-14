@@ -28,12 +28,21 @@
     }
 }
 
-.width--small {
-    width: 250px;
+.height--small {
+    height: 150px;
 }
 
-.width--1080 {
+.max-width--small {
+    max-width: 250px;
+}
+
+.max-width--medium {
+    max-width: 350px;
+}
+
+.container {
     max-width: 1080px;
+    margin: 0 auto;
 }
 
 
@@ -44,14 +53,12 @@
 
 .color--white {
     color: $color-white;
+}
 
-    h1, h2 {
-        color: $color-white;
-    }
-    
-    p {
-        color: $color-white;
-    }
+@mixin background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .background--turquoise {
@@ -62,3 +69,12 @@
     background-color: $color-orange;
 }
 
+.background--grayish-white {
+    background-color: $color-grayish-white;
+}
+
+
+.background--disease {
+    @include background;
+    background-image: url("/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png");
+}

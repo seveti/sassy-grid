@@ -54,18 +54,35 @@
     @include padding--large;
 }
 
-
-
-.padding-top--small {
+@mixin padding-top--small {
     padding-top: $size-8;
 }
 
-.padding-top--medium {
+.padding-top--small {
+    @include padding-top--small;
+}
+
+
+@mixin padding-top--medium {
     padding-top: $size-6;
 }
 
-.padding-top--large {
+.padding-top--medium {
+    @include padding-top--medium;
+}
+
+
+@mixin padding-top--large {
     padding-top: $size-4;
+}
+
+.padding-top--large {
+    @include padding-top--large;
+}
+
+
+.padding-top--xlarge {
+    padding-top: $size-2;
 }
 
 
@@ -83,4 +100,8 @@
 
 .padding-bottom--large {
     padding-bottom: $size-4;
+}
+
+.padding-bottom--xlarge {
+    padding-bottom: $size-2;
 }

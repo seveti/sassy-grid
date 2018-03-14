@@ -1,0 +1,58 @@
+@mixin two-column-list {
+    @include desktop-up {
+        @include grid(1fr 4rem 1fr);
+    }
+
+    @include tablet-only {
+        @include grid(1fr 2rem 1fr);
+    }
+
+    @include mobile-only {
+        @include grid(1fr, 1fr);
+    }
+
+    &__left {
+        @include grid;
+        @include align(start);
+        @include desktop-up {
+            @include justify(center);
+            @include grid-start(1);
+        }
+        
+        @include tablet-only {
+            @include justify(center);
+            @include grid-start(1, 1);
+        }
+
+        @include mobile-only {
+            @include justify(start);
+            @include grid-start(1, 1);
+        }
+
+        @include padding-top--medium;
+    }
+
+    &__right {
+        @include grid;
+        @include align(start);
+        @include desktop-up {
+            @include grid-start(3);
+        }
+        
+        @include tablet-only {
+            @include grid-start(3, 1);
+        }
+
+        @include mobile-only {
+            @include grid-start(1, 2);
+        }
+
+        @include tablet-up {
+            @include padding-top--medium;
+        }
+    }
+}
+
+.two-column-list {
+    @include two-column-list;
+}

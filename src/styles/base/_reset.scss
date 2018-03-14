@@ -13,10 +13,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 body {
-  line-height: 1.25; }
+  line-height: 1.5; }
 
 ol, ul {
-  list-style: none; }
+  list-style: initial; }
+
+ol li, ul li {
+  list-style-position: outside;
+  margin-left: 20px;
+  padding-left: 0px;
+}
 
 blockquote, q {
   quotes: none; }
