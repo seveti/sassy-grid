@@ -4,14 +4,74 @@
 
 .block {
     @include block;
+}
 
-    &--title {
-        @include block;
-        padding: 0 0 $size-6;
+@mixin block--small {
+    @include block;
+    @include desktop-up {
+        padding: 2rem $size-6;
     }
 
-    &--body {
-        @include block;
-        padding: $size-6 0;
+    @include tablet-only {
+        padding: 2rem $size-4;
     }
+
+    @include mobile-only {
+        padding: 2rem $size-6;
+    }
+}
+
+.block--small { 
+    @include block--small;
+}
+
+
+@mixin block--medium {
+    @include block;
+    @include desktop-up {
+        padding: 3rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 2rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 2rem $size-6;
+    }
+}
+
+.block--medium { 
+    @include block--medium;
+}
+
+
+@mixin block--large {
+    @include grid;
+    @include desktop-up {
+        padding: 5rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 4rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 4rem $size-6;
+    }
+}
+
+.block--large { 
+    @include block--large;
+}
+
+
+.block--container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.block--icon {
+    @include justify(center);
+    text-align: center;
 }
