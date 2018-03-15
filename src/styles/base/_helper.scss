@@ -1,14 +1,27 @@
 
 
-.border--small { 
+// Align vertically
+.align-start { @include align(start); }
+.align-center { @include align(center); }
+.align-end { @include align(end); }
+
+// Justify horizontally
+.justify-start { @include justify(start); }
+.justify-center { @include justify(center); }
+.justify-end { @include justify(end); }
+
+// Border small
+.border-small { 
     border: 1px solid #ccc;
 }
 
-.border--medium { 
+// Border medium
+.border-medium { 
     border: 3px solid #ccc;
 }
 
-.desktop--hide {
+// Hide on desktop
+.desktop-hide {
     @include tablet-up {
         display: none;
     }
@@ -18,7 +31,8 @@
     }
 }
 
-.mobile--hide {
+// Hide on mobile
+.mobile-hide {
     @include tablet-up {
         display: block;
     }
@@ -28,47 +42,25 @@
     }
 }
 
-.height--small {
+// Text align center
+.text-center {
+    text-align: center;
+}
+
+// Color white
+.color-white {
+    color: $color-white;
+}
+
+
+.height-small {
     height: 150px;
 }
 
-.max-width--small {
+.max-width-small {
     max-width: 250px;
 }
 
 .max-width--medium {
     max-width: 350px;
-}
-
-.text--center {
-    text-align: center;
-}
-
-
-.color--white {
-    color: $color-white;
-}
-
-@mixin background {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.background--turquoise {
-    background-color: $color-turquoise;
-}
-
-.background--orange {
-    background-color: $color-orange;
-}
-
-.background--grayish-white {
-    background-color: $color-grayish-white;
-}
-
-
-.background--disease {
-    @include background;
-    background-image: url("/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png");
 }

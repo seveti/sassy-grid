@@ -1,20 +1,22 @@
 @mixin icon {
-    margin: 0 auto;
+    @include grid;
+    padding: 0 0 $size-6;
 
-    @include desktop-up {
+    &__img {
+        @include grid-start(1);
+        @include justify(center);
         width: 225px;
         height: 225px;
+        padding: 0 0 $size-8;
     }
 
-    @include tablet-only {
-        width: 200px;
-        height: 200px;
+    &__body {
+        @include grid-start(1, 2);
+        @include justify(center);
+        width: 250px;
+        text-align: center;
     }
 
-    @include mobile-only {
-        width: 200px;
-        height: 200px;
-    }
 }
 
 .icon {

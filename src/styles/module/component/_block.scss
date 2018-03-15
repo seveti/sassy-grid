@@ -1,77 +1,37 @@
+// Default mixin
 @mixin block {
     @include grid;
+    padding: 0 0 $size-6;
+
+    &__title {
+        padding: 0 0 $size-10;
+    }
+
+    &__body {
+        padding: 0 0 $size-10;
+    }
 }
 
 .block {
+
+    // Block
     @include block;
-}
 
-@mixin section--small {
-    @include block;
-    @include desktop-up {
-        padding: 2rem $size-6;
+    // Small block
+    &--small {
+        padding: 0 0 $size-8;
     }
 
-    @include tablet-only {
-        padding: 2rem $size-4;
+    // Large block
+    &--large {
+        padding: 0 0 $size-4;
     }
 
-    @include mobile-only {
-        padding: 2rem $size-6;
+    // White/center block
+    &--white-center {
+        .block__title {
+            color: $color-white;
+            text-align: center;
+        }
     }
-}
-
-.section--small { 
-    @include section--small;
-}
-
-
-@mixin section--medium {
-    @include block;
-    @include desktop-up {
-        padding: 3rem $size-6;
-    }
-
-    @include tablet-only {
-        padding: 2rem $size-4;
-    }
-
-    @include mobile-only {
-        padding: 2rem $size-6;
-    }
-}
-
-.section--medium { 
-    @include section--medium;
-}
-
-
-@mixin section--large {
-    @include grid;
-    @include desktop-up {
-        padding: 5rem $size-6;
-    }
-
-    @include tablet-only {
-        padding: 4rem $size-4;
-    }
-
-    @include mobile-only {
-        padding: 4rem $size-6;
-    }
-}
-
-.section--large { 
-    @include section--large;
-}
-
-
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-}
-
-.block--icon {
-    @include justify(center);
-    text-align: center;
 }

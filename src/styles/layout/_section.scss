@@ -1,0 +1,89 @@
+// Default mixin
+@mixin section {
+    @include grid;
+
+    @include desktop-up {
+        padding: 3rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 2rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 2rem $size-6;
+    }
+}
+
+.section {
+
+    // Section
+    @include section;
+    
+    // Small section
+    &--small {
+        @include desktop-up {
+            padding: 2rem $size-6;
+        }
+
+        @include tablet-only {
+            padding: 2rem $size-4;
+        }
+
+        @include mobile-only {
+            padding: 2rem $size-6;
+        }
+    }
+
+    // Large section
+    &--large {
+        @include desktop-up {
+            padding: 5rem $size-6;
+        }
+
+        @include tablet-only {
+            padding: 4rem $size-4;
+        }
+
+        @include mobile-only {
+            padding: 4rem $size-6;
+        }
+    }
+
+    // Turquoise background section
+    &--turquoise {
+        background-color: $color-turquoise;
+    }
+
+    &--orange {
+        background-color: $color-orange;
+    }
+
+    &--grayish-white {
+        background-color: $color-grayish-white;
+    }
+
+    &--disease {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url("/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png");
+
+        @include desktop-up {
+            padding: 3rem $size-6;
+        }
+
+        @include tablet-only {
+            padding: 2rem $size-4;
+        }
+
+        @include mobile-only {
+            padding: 2rem $size-6;
+        }
+    }
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
