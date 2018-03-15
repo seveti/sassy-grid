@@ -6,7 +6,7 @@
     @include block;
 }
 
-@mixin block--small {
+@mixin section--small {
     @include block;
     @include desktop-up {
         padding: 2rem $size-6;
@@ -21,12 +21,12 @@
     }
 }
 
-.block--small { 
-    @include block--small;
+.section--small { 
+    @include section--small;
 }
 
 
-@mixin block--medium {
+@mixin section--medium {
     @include block;
     @include desktop-up {
         padding: 3rem $size-6;
@@ -41,12 +41,12 @@
     }
 }
 
-.block--medium { 
-    @include block--medium;
+.section--medium { 
+    @include section--medium;
 }
 
 
-@mixin block--large {
+@mixin section--large {
     @include grid;
     @include desktop-up {
         padding: 5rem $size-6;
@@ -61,12 +61,12 @@
     }
 }
 
-.block--large { 
-    @include block--large;
+.section--large { 
+    @include section--large;
 }
 
 
-.block--container {
+.container {
     max-width: 1080px;
     margin: 0 auto;
 }

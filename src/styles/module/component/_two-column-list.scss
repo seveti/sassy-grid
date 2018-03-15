@@ -48,8 +48,20 @@
             @include grid-start(1, 2);
         }
     }
+
+    .body {
+        padding: 0;
+    }
 }
 
 .two-column-list {
     @include two-column-list;
+
+    &--white {
+        @include two-column-list;
+    
+        .body {
+            color: $color-white;
+        }
+    }
 }

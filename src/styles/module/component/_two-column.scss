@@ -1,4 +1,4 @@
-@mixin columns-two {
+@mixin two-column {
     @include desktop-up {
         @include grid(1fr 1rem 1fr);
     }
@@ -8,12 +8,13 @@
     }
 
     @include mobile-only {
-        @include grid(1fr, 1fr 1rem 1fr);
+        @include grid(1fr, auto 1rem auto);
     }
 
     &__left {
         @include grid;
         @include align(start);
+
         @include desktop-up {
             @include grid-start(1);
         }
@@ -30,6 +31,7 @@
     &__right {
         @include grid;
         @include align(start);
+
         @include desktop-up {
             @include grid-start(3);
         }
@@ -44,22 +46,6 @@
     }
 }
 
-.columns-two {
-    @include columns-two;
-}
-
-.columns-two--center {
-    @include columns-two;
-    
-    &__left {
-        @include justify(center);
-    }
-
-    &__center {
-        @include justify(center);
-    }
-
-    &__right {
-        @include justify(center);
-    }
+.two-column {
+    @include two-column;
 }
