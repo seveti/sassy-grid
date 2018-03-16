@@ -3,10 +3,18 @@ body {
   font-size: $font-size-normal;
 }
 
+em, i { 
+  font-style: italic;
+}
+
+strong { 
+  font-weight: $weight-bold;
+}
+
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-primary;
-  font-weight: bold;
+  font-weight: $weight-bold;
   color: inherit;
   clear: both;
   line-height: 1.1;

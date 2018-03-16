@@ -4,7 +4,7 @@
     padding: 0 0 $size-6;
 
     &__title {
-        padding: 0 0 $size-10;
+        padding: 0 0 $size-9;
     }
 
     &__body {
@@ -17,6 +17,11 @@
     // Block
     @include block;
 
+    // X-Small block
+    &--xsmall {
+        padding: 0 0 $size-10;
+    }
+
     // Small block
     &--small {
         padding: 0 0 $size-8;
@@ -27,11 +32,54 @@
         padding: 0 0 $size-4;
     }
 
-    // White/center block
-    &--white-center {
+    // X-Large block
+    &--xlarge {
+        padding: 0 0 $size-2;
+    }
+
+    // Hero block
+    &--hero {
+        padding: 0;
+
         .block__title {
+            padding: 0;
             color: $color-white;
             text-align: center;
+        }
+    }
+
+    // White/center block
+    &--white-center {
+        padding: 0;
+
+        .block__title {
+            padding: 0;
+            color: $color-white;
+            text-align: center;
+        }
+
+        .block__body {
+            padding: 0;
+            color: $color-white;
+            text-align: center;
+        }
+    }
+
+    // Reference
+    &--reference {
+        padding: 0;
+
+        .block__title {
+            padding: 0;
+            font-size: 14px;
+            font-weight: $weight-bold;
+            color: #333333;
+        }
+
+        .block__body {
+            padding: 0;
+            font-size: 14px;
+            color: #333333;
         }
     }
 }

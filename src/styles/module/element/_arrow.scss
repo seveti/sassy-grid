@@ -1,0 +1,19 @@
+@mixin arrow {
+    padding-left: 5px;
+    height: 25px;
+    width: 25px;
+    margin-top: -4px;
+    -moz-transition: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+    vertical-align: middle;
+}
+
+.arrow {
+    @include arrow;
+
+    &--right {
+
+    }
+}

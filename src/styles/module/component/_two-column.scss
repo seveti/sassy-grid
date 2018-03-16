@@ -47,5 +47,15 @@
 }
 
 .two-column {
+    
+    // Two column
     @include two-column;
+    
+    // Two column list
+    &--list {
+    
+        @include mobile-only {
+            @include grid(1fr, auto 0 auto);
+        }
+    }
 }

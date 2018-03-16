@@ -17,13 +17,14 @@
 
 // Element
 @import "./styles/module/element/typography";
+@import "./styles/module/element/link";
 @import "./styles/module/element/button";
 @import "./styles/module/element/play-button";
+@import "./styles/module/element/arrow";
 
 // Component
 @import "./styles/module/component/block";
 @import "./styles/module/component/two-column";
-@import "./styles/module/component/two-column-list";
 @import "./styles/module/component/three-column";
 @import "./styles/module/component/hero";
 @import "./styles/module/component/icon";

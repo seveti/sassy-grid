@@ -1,6 +1,5 @@
 @mixin icon {
     @include grid;
-    padding: 0 0 $size-6;
 
     &__img {
         @include grid-start(1);
