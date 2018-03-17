@@ -99,12 +99,33 @@
     }
 }
 
+.section--thomas {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url("/assets/images/hcp/interior-2-2/desktop/thomas-hero-desktop.png");
+    
+    @include desktop-up {
+        padding: 5rem $size-6;
+    }
+
+    @include tablet-only {
+        padding: 4rem $size-4;
+    }
+
+    @include mobile-only {
+        padding: 4rem $size-6;
+    }
+}
+
 .container {
     max-width: 1080px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .container--small {
     max-width: 800px;
+    width: 100%;
     margin: 0 auto;
 }

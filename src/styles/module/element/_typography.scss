@@ -1,6 +1,7 @@
 body {
   font-family: $font-family-primary;
   font-size: $font-size-normal;
+  font-weight: $weight-normal;
 }
 
 em, i { 
@@ -14,13 +15,16 @@ strong {
 /* Headers */
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-primary;
-  font-weight: $weight-bold;
   color: inherit;
   clear: both;
   line-height: 1.1;
 }
 
 h1 {
+  font-weight: $weight-bold;
+  color: $color-h1;
+  text-transform: uppercase;
+
   @include desktop-up {
     font-size: 30px;
   }
@@ -32,12 +36,13 @@ h1 {
   @include mobile-only {
     font-size: 20px;
   }
-
-  color: $color-h1;
-  text-transform: uppercase;
 }
 
 h2 {
+  font-weight: $weight-bold;
+  color: $color-h2;
+  text-transform: uppercase;
+
   @include desktop-up {
     font-size: 26px;
   }
@@ -49,12 +54,13 @@ h2 {
   @include mobile-only {
     font-size: 20px;
   }
-  
-  color: $color-h2;
-  text-transform: uppercase;
 }
 
 h3 {
+  font-weight: $weight-semibold;
+  color: $color-h3;
+  text-transform: uppercase;
+
   @include desktop-up {
     font-size: 20px;
   }
@@ -66,12 +72,12 @@ h3 {
   @include mobile-only {
     font-size: 20px;
   }
-
-  color: $color-h3;
-  text-transform: uppercase;
 }
 
 h4 {
+  font-weight: $weight-semibold;
+  color: $color-h4;
+
   @include desktop-up {
     font-size: 20px;
   }
@@ -83,8 +89,6 @@ h4 {
   @include mobile-only {
     font-size: 16px;
   }
-
-  color: $color-h4;
 }
 
 h5 {
