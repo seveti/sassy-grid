@@ -1,6 +1,6 @@
-@mixin three-column {
+@mixin four-column {
     @include desktop-up {
-        @include grid(1fr 1rem 1fr 1rem 1fr);
+        @include grid(1fr 1rem 1fr 1rem 1fr 1rem 1fr);
     }
 
     @include tablet-only {
@@ -8,10 +8,10 @@
     }
 
     @include mobile-only {
-        @include grid(1fr, auto 1rem auto 1rem auto);
+        @include grid(1fr, auto 1rem auto 1rem auto 1rem auto);
     }
 
-    .three-column__1 {
+    .four-column__1 {
         @include grid;
         @include align(start);
 
@@ -28,10 +28,10 @@
         }
     }
 
-    .three-column__2 {
+    .four-column__2 {
         @include grid;
         @include align(start);
-        
+
         @include desktop-up {
             @include grid-start(3);
         }
@@ -45,7 +45,7 @@
         }
     }
 
-    .three-column__3 {
+    .four-column__3 {
         @include grid;
         @include align(start);
 
@@ -61,8 +61,26 @@
             @include grid-start(1, 5);
         }
     }
+
+    .four-column__4 {
+        @include grid;
+        @include align(start);
+
+        @include desktop-up {
+            @include grid-start(7);
+        }
+        
+        @include tablet-only {
+            @include grid-start(3, 3);
+        }
+
+        @include mobile-only {
+            @include grid-start(1, 7);
+        }
+    }
 }
 
-.three-column {
-    @include three-column;
+// Four column
+.four-column {
+    @include four-column;
 }
