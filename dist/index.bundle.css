@@ -173,6 +173,9 @@ sup {
 .max-width--medium {
   max-width: 350px; }
 
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05); }
+
 .site {
   grid-template-rows: repeat(3, auto); }
 
@@ -707,6 +710,74 @@ h4 {
     .four-column .four-column__4 {
       grid-column-start: 1;
       grid-row-start: 7; } }
+
+.tabs {
+  /* Clearfix */
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  padding: 0; }
+  .tabs::before, .tabs::after {
+    display: table;
+    content: '';
+    clear: both; }
+  @media (max-width: 40em) {
+    .tabs {
+      border: 1px solid #dcdcdc;
+      border-radius: 3px; } }
+  .tabs .tab {
+    list-style: none; }
+    @media (min-width: 40em) {
+      .tabs .tab {
+        display: inline; } }
+    .tabs .tab:first-child .tab-button {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+      @media (max-width: 40em) {
+        .tabs .tab:first-child .tab-button {
+          border-top: 0; } }
+    @media (max-width: 40em) {
+      .tabs .tab:last-child .tab-button {
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px; } }
+    .tabs .tab.active .tab-button {
+      background-color: #f7f7f7; }
+      @media (min-width: 40em) {
+        .tabs .tab.active .tab-button {
+          background-color: #f7f7f7;
+          border: 1px solid #dcdcdc;
+          border-bottom-color: #f7f7f7;
+          margin-bottom: -1px; } }
+    .tabs .tab.active .tab-content {
+      display: grid; }
+  .tabs .tab-button {
+    background-color: #fff;
+    border-top: 1px solid #dcdcdc;
+    color: #333;
+    display: block;
+    font-weight: bold;
+    padding: 0.5rem 5px;
+    text-decoration: none; }
+    @media (min-width: 40em) {
+      .tabs .tab-button {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-top: 0;
+        display: inline-block; } }
+    .tabs .tab-button:hover {
+      color: #477dca; }
+    .tabs .tab-button:focus {
+      outline: none; }
+  .tabs .tab-content {
+    background: #f7f7f7;
+    display: none;
+    padding: 1rem 10px; }
+    @media (min-width: 40em) {
+      .tabs .tab-content {
+        border: 1px solid #dcdcdc;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        float: left; } }
 
 .icon__img {
   grid-column-start: 1;
