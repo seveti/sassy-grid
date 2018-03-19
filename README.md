@@ -36,7 +36,7 @@ sassy-grid/
 * Microsoft Edge 16+
 * Internet Explorer 10+ (-ms- prefix built in)
 
-## Coming soon
+## Coming soon...
 * Tabs
   * tab
 * Accordions
@@ -52,3 +52,6 @@ sassy-grid/
   * blog-post__title
   * blog-post__content
 * Animate.css
+
+###### Explore
+[A New View of the Moon](https://www.youtube.com/watch?v=XCrJ3NflOpE)
