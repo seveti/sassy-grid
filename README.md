@@ -28,10 +28,27 @@ sassy-grid/
     └── index.bundle.css.map
 ```
 
-## Browser Support
+## Browser support
 * Chrome 57+
 * Firefox 52+
 * Opera 44+
 * Safari 10.1+
 * Microsoft Edge 16+
 * Internet Explorer 10+ (-ms- prefix built in)
+
+## Coming soon
+* Tabs
+  * tab
+* Accordions
+  * accordion
+* Cards
+  * card
+  * card card--image-right
+  * card card--image-top
+  * card__title
+  * card__content
+* Blog posts
+  * blog-post
+  * blog-post__title
+  * blog-post__content
+* Animate.css
