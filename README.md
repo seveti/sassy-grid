@@ -53,5 +53,5 @@ sassy-grid/
   * blog-post__content
 * Animate.css
 
-###### Explore
+## Explore
 [A New View of the Moon](https://www.youtube.com/watch?v=XCrJ3NflOpE)
