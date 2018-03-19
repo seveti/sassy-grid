@@ -1,4 +1,6 @@
-<p align="center"><h1>Sassy Grid</h1>
+<p align="center">
+    <b style="font-size: 30px;">Sassy Grid</b>
+    <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a> using <a href="https://sass-lang.com/)">Sass</a>, <a href="http://getbem.com/">BEM</a>, and <a href="https://smacss.com/">SMACSS</a>
 
 [CSS Grid IE10+ Implementation](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) using [Sass](https://sass-lang.com/), [BEM](http://getbem.com/), and [SMACSS](https://smacss.com/)
 </p>
@@ -29,14 +31,9 @@ sassy-grid/
 ```
 
 ## Browser Support
-Chrome 57+
-
-Firefox 52+
-
-Opera 44+
-
-Safari 10.1+
-
-Microsoft Edge 16+
-
-Internet Explorer 10+ (-ms- prefix built in)
+* Chrome 57+
+* Firefox 52+
+* Opera 44+
+* Safari 10.1+
+* Microsoft Edge 16+
+* Internet Explorer 10+ (-ms- prefix built in)
