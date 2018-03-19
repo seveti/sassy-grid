@@ -1,3 +1,4 @@
+
 .tabs {
     $base-border-color: #dcdcdc !default;
     $base-border-radius: 3px !default;
@@ -13,6 +14,7 @@
     $tab-active-background: $tab-content-background;
     $tab-inactive-color: $base-background-color;
     $tab-inactive-hover-color: darken($light-gray, 5);
+    $tab-true: true;
     $tab-mode: $medium-screen;
     /* Clearfix */
     &::before,
@@ -86,12 +88,14 @@
       background: $tab-content-background;
       display: none;
       padding: $base-spacing $gutter;
-      @media(min-width: $tab-mode) {
-        border: $tab-border;
-        border-bottom-left-radius: $base-border-radius;
-        border-bottom-right-radius: $base-border-radius;
-        border-top-right-radius: $base-border-radius;
-        float: left;
+      @if($tab-true) {
+        @media(min-width: $tab-mode) {
+          border: $tab-border;
+          border-bottom-left-radius: $base-border-radius;
+          border-bottom-right-radius: $base-border-radius;
+          border-top-right-radius: $base-border-radius;
+          float: left;
+        }
       }
     }
   }

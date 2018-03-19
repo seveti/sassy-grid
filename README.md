@@ -1,6 +1,6 @@
 <h1 align="center">Sassy Grid</h1>
 <p align="center">
-    <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a> built with <a href="https://sass-lang.com/)">Sass</a>
+    A simple <a href="https://smacss.com/">SMACSS</a> style guide and <a href="http://getbem.com/">BEM</a> setup with <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a>
 </p>
 
 ## Quick start
@@ -12,20 +12,29 @@
 ## What's included
 Within the download you'll find the following directories and files. You'll see something like this:
 ```
-sassy-grid/
-├── src/
-│   ├── app.js
-│   ├── main.scss
-│   └── styles/
-│       ├── base/
-│       ├── layout/
-│       ├── module/
-│       └── theme/
-└── dist/
-    ├── index.html
-    ├── index.bundle.js
-    ├── index.bundle.css
-    └── index.bundle.css.map
+styles/
+├── base/
+│   ├── _reset.scss
+│   ├── _responsive.scss
+│   └── _grid.scss
+│   ├── _mixins.scss
+│   ├── _base.scss
+│   └── _helper.scss
+└── layout/
+│   ├── _site.scss
+│   ├── _header.scss
+│   ├── _body.scss
+│   └── _footer.scss
+├── module/
+│   ├── element/
+│   │   ├── _typography.scss
+│   │   ├── _link.scss
+│   │   └── _button.scss
+│   └── component/
+│       ├── _section.scss
+│       └── _block.scss
+└── theme/
+    └── _custom.scss
 ```
 
 ## Browser support
@@ -47,10 +56,6 @@ sassy-grid/
   * card card--image-top
   * card__title
   * card__content
-* Blog posts
-  * blog-post
-  * blog-post__title
-  * blog-post__content
 * Animate.css
 
 ## Explore

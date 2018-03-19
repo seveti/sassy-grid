@@ -578,7 +578,7 @@ h4 {
     grid-template-rows: auto 0 auto; } }
 
 @media only screen and (min-width: 540px) {
-  .two-column--list .two-column__left, .two-column--list .two-column__right {
+  .two-column--list .two-column__1, .two-column--list .two-column__2 {
     justify-self: center; } }
 
 @media only screen and (min-width: 850px) {

@@ -1,15 +1,8 @@
 // Responsive
 // -------------------
 
-// Tablet, Desktop, and Widescreen
-@mixin tablet-up { 
-  @media only screen and (min-width: $breakpoint-mobile) { @content; }
-}
-
-// Desktop and Widescreen
-@mixin desktop-up {
-  @media only screen and (min-width: $breakpoint-tablet) { @content; }
-}
+@mixin tablet-up { @media only screen and (min-width: $breakpoint-mobile) { @content; } } // Tablet, Desktop, and Widescreen
+@mixin desktop-up { @media only screen and (min-width: $breakpoint-tablet) { @content; } } // Desktop and Widescreen
 
 @mixin tablet-down { @media only screen and (max-width: $breakpoint-tablet) { @content; } } // Tablet and Mobile
 @mixin desktop-down { @media only screen and (max-width: $breakpoint-desktop) { @content; } } // Desktop, Tablet, and Mobile

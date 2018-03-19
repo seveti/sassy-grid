@@ -103,7 +103,7 @@
         @include grid(1fr, auto 0 auto);
     }
 
-    .two-column__left, .two-column__right {
+    .two-column__1, .two-column__2 {
         @include tablet-up {
             @include justify(center);
         }

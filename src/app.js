@@ -1,6 +1,6 @@
 // require('./js/helloworld');
 // require('./js/test');
-import './main';
+import styles from './main';
 
 // var img = new Image();   // Create new img element
 // img.src = '/assets/images/hcp/interior-1-1/desktop/1-1-interior-6-hcp.png';
@@ -25,7 +25,7 @@ import './main';
       for (let i = 0; i < tabList.length; i++) {
         let tabElement = tabList[i]
         if (tabElement.isEqualNode(chosenTabElement)) {
-            tabElement.classList.add(activeClass)
+             tabElement.classList.add(activeClass) 
             /* For accordion */
             /*
             if (tabElement.classList.contains(activeClass)) {
@@ -66,20 +66,19 @@ import './main';
     }
   
   })()
-  
 
-/* Media Query using Javascript
+
+ //Media Query using Javascript
 
 // if myFunction (widthChange)
 function myFunction(x) {
     if (x.matches) { // If media query matches
-        document.body.style.backgroundColor = "yellow";
+        // document.body.style.backgroundColor = "yellow";
     } else {
-        document.body.style.backgroundColor = "pink";
+        // document.body.style.backgroundColor = "pink";
     }
 }
 
 var x = window.matchMedia("(max-width: 700px)")
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
-*/
