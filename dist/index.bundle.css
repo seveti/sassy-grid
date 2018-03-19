@@ -362,6 +362,9 @@ h4 {
   .section {
     padding: 2rem 1rem; } }
 
+.section--clear {
+  padding: 0; }
+
 @media only screen and (min-width: 850px) {
   .section--small {
     padding: 2rem 1rem; } }
