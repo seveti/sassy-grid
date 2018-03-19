@@ -1,4 +1,4 @@
-<h3 align="center">Sassy Grid</h3>
+<h1 align="center">Sassy Grid</h1>
 <p align="center">
     <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a> using <a href="https://sass-lang.com/)">Sass</a>, <a href="http://getbem.com/">BEM</a>, and <a href="https://smacss.com/">SMACSS</a>
 </p>
