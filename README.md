@@ -1,9 +1,11 @@
-## Sassy Grid
+<p align="center"><h1>Sassy Grid</h1>
+
 [CSS Grid IE10+ Implementation](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/) using [Sass](https://sass-lang.com/), [BEM](http://getbem.com/), and [SMACSS](https://smacss.com/)
+</p>
 
 ## Quick start
 * Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
-* Install Grunt CLI: `npm install -g grunt-cli`
+* Install the Grunt CLI: `npm install -g grunt-cli`
 * Install Node.js dependencies: `npm install`
 * Run the app: `grunt`
 
@@ -28,8 +30,13 @@ sassy-grid/
 
 ## Browser Support
 Chrome 57+
+
 Firefox 52+
+
 Opera 44+
+
 Safari 10.1+
+
 Microsoft Edge 16+
+
 Internet Explorer 10+ (-ms- prefix built in)
