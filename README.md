@@ -40,17 +40,17 @@ styles/
 ## Mixins
 ### Responsive
 ```scss
-/* Tablet, Desktop, and Widescreen */
-@include tablet-up {}
-
-/* Tablet and Mobile */
-@include tablet-down {}
-
 /* Desktop and Widescreen */
 @include desktop-up {}
 
 /* Desktop, Tablet, and Mobile */
 @include desktop-down {}
+
+/* Tablet, Desktop, and Widescreen */
+@include tablet-up {}
+
+/* Tablet and Mobile */
+@include tablet-down {}
 
 /* Responsive Only Views */
 @include mobile-only {}
