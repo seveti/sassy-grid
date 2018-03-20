@@ -79,7 +79,7 @@ styles/
 <div class="section section--modifier-class">
     <div class="block block--modifier-class">
         <h1 class="block__title">Lorem ipsum</h1>
-        <p class="block__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <p class="block__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
 </div>
 ```
