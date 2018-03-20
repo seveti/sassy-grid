@@ -1,4 +1,4 @@
-// Default mixin
+/* Block */
 @mixin block {
     @include grid;
     padding: 0 0 $size-6;
@@ -8,22 +8,17 @@
     }
 }
 
-// Block
+/* Default class */
 .block {
     @include block;
 }
 
-
-/*
- Size Modifiers
-*/
-
-// None block
+/* Clear block */
 .block--clear {
     padding: 0;
 }
 
-// X-small block
+/* X-small block */
 .block--xsmall {
     padding: 0 0 $size-10;
 }
@@ -41,37 +36,4 @@
 // X-large block
 .block--xlarge {
     padding: 0 0 $size-2;
-}
-
-
-/*
- Custom Modifiers
-*/
-
-// Hero block
-.block--hero {
-    padding: 0;
-
-    .block__title {
-        padding: 0;
-        color: $color-white;
-        text-align: center;
-    }
-}
-
-// Reference
-.block--reference {
-    padding: 0;
-    
-    .block__title {
-        font-size: 14px;
-        font-weight: $weight-bold;
-        color: #969696;
-    }
-
-    .block__body {
-        padding: 0;
-        font-size: 14px;
-        color: #333333;
-    }
 }

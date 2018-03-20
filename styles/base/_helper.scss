@@ -1,26 +1,24 @@
-
-
-// Align vertically
+/* CSS Grid Align */
 .align-start { @include align(start); }
 .align-center { @include align(center); }
 .align-end { @include align(end); }
 
-// Justify horizontally
+/* CSS Grid Justify */
 .justify-start { @include justify(start); }
 .justify-center { @include justify(center); }
 .justify-end { @include justify(end); }
 
-// Border small
+/* Small border */
 .border-small { 
     border: 1px solid #ccc;
 }
 
-// Border medium
+/* Medium border */
 .border-medium { 
     border: 3px solid #ccc;
 }
 
-// Hide on desktop
+/* Hide on desktop */
 .desktop-hide {
     @include tablet-up {
         display: none;
@@ -31,7 +29,7 @@
     }
 }
 
-// Hide on mobile
+/* Hide on mobile */
 .mobile-hide {
     @include tablet-up {
         display: block;
@@ -42,30 +40,32 @@
     }
 }
 
-// Text align center
+/* Text align center */
 .text-center {
     text-align: center;
 }
 
-// Color white
+/* Color white */
 .color-white {
     color: $color-white;
 }
 
-
+/* Height small */
 .height-small {
     height: 150px;
 }
 
+/* Max width small */
 .max-width-small {
     max-width: 250px;
 }
 
+/* Max width medium */
 .max-width--medium {
     max-width: 350px;
 }
 
-
+/* Box shadow */
 .box-shadow {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
 }

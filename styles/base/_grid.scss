@@ -1,11 +1,10 @@
-
 // Check for IE 10+
 $ie: false;
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     $ie: true;
 }
 
-// Grid mixin - Placeholder selectors
+/* Grid mixin placeholder selectors */
 @if ($ie == false) {
     %grid-static { display: grid; }
     %grid-template-columns-auto-static { grid-template-columns: auto; }
@@ -16,7 +15,7 @@ $ie: false;
     %grid-template-rows-auto-static { -ms-grid-rows: auto; }
 }
 
-// Grid mixin
+/* Grid mixin */
 @mixin grid($grid-template-columns: auto, $grid-template-rows: auto) {
 
     @extend %grid-static;
@@ -42,8 +41,7 @@ $ie: false;
     }
 }
 
-
-// Grid start mixin
+/* Grid start mixin */
 @mixin grid-start($grid-column-start: 1, $grid-row-start: 1) {
     @if ($ie == false) {
         grid-column-start: $grid-column-start;
@@ -54,8 +52,7 @@ $ie: false;
     }
 }
 
-
-// Align mixin
+/* Align mixin (start, center, end) */
 @mixin align($align-self: start) {
     @if ($ie == false) {
         align-self: $align-self;
@@ -64,7 +61,7 @@ $ie: false;
     }
 }
 
-// Justify mixin
+/* Justify mixin (start, center, end) */
 @mixin justify($justify-self: start) {
     @if ($ie == false) {
         justify-self: $justify-self;

@@ -32,7 +32,7 @@ styles/
 │   │   ├── _link.scss
 │   │   └── _button.scss
 │   └── component/
-│       └── _custom.scss
+│       └── _two-column.scss
 ├── state/
 │   └── _custom.scss
 └── theme/
@@ -41,18 +41,39 @@ styles/
 
 ## Usage
 ### CSS Grid Mixins
+```scss
+/* Grid mixin */
+@include grid($grid-template-columns: auto, $grid-template-rows: auto);
+
+/* Grid start mixin */
+@include grid-start($grid-column-start: 1, $grid-row-start: 1);
+
+/* Align mixin (start, center, end) */
+@include align($align-self: start);
+
+/* Justify mixin (start, center, end) */
+@include justify($justify-self: start);
 ```
-// Grid
-@include grid($grid-template-columns, $grid-template-rows);
 
-// Grid Start
-@include grid-start($grid-column-start, $grid-row-start);
+### Responsive Mixins
+```scss
+/* Tablet, Desktop, and Widescreen */
+@mixin tablet-up {}
 
-// Grid Align (start, center, end)
-@include align($align-self);
+/* Desktop and Widescreen */
+@mixin desktop-up {}
 
-// Grid Justify (start, center, end)
-@include align($align-self);
+/* Desktop, Tablet, and Mobile */
+@mixin desktop-down {}
+
+/* Tablet and Mobile */
+@mixin tablet-down {}
+
+/* Responsive Only Views */
+@mixin mobile-only {}
+@mixin tablet-only {}
+@mixin desktop-only {}
+@mixin widescreen-only {}
 ```
 
 ## Browser support

@@ -1,15 +1,15 @@
-/* Custom Colors */
-$color-black: #000000; // Orange color
-$color-white: #ffffff; // Orange color
-$color-turquoise: #31A2AC; // Turquoise color
-$color-turquoise-light: #98d0d5; // Light Turquoise color
-$color-orange: #F49800; // Orange color
-$color-orange-dark: #C67D04; // Dark Orange color
-$color-grey: #4a4b45; // Grey color
-$color-grey-dark: #2F2F28; // Grey color
-$color-grayish-white: #F0EFF0; // Grayish White color
-$color-auburn: #85200C; // Auburn color
-$color-old-wood: #2F2F28; // Old Wood color
+/* Colors */
+$color-black: #000000;
+$color-white: #ffffff;
+$color-turquoise: #31A2AC;
+$color-turquoise-light: #98d0d5;
+$color-orange: #F49800;
+$color-orange-dark: #C67D04;
+$color-grey: #4a4b45;
+$color-grey-dark: #2F2F28;
+$color-grayish-white: #F0EFF0;
+$color-auburn: #85200C;
+$color-old-wood: #2F2F28;
 
 $color-primary: $color-turquoise;
 $color-secondary: $color-turquoise-light;
@@ -23,6 +23,7 @@ $color-h4: $color-grey-dark;
 $font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
 $font-size-normal: '16px';
 
+/* Sizes */
 $size-1: 3rem;
 $size-2: 2.5rem;
 $size-3: 2rem;
@@ -34,6 +35,7 @@ $size-8: 0.5rem;
 $size-9: 0.2rem;
 $size-10: 0.25rem;
 
+/* Weight */
 $weight-light: 300;
 $weight-normal: 400;
 $weight-medium: 500;

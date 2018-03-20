@@ -1,3 +1,4 @@
+/* Link */
 @mixin link {
     font-family: $font-family-primary;
     font-size: $font-size-normal;
@@ -12,6 +13,7 @@
     }
 }
 
+/* Default class */
 .link {
     @include link;
 
