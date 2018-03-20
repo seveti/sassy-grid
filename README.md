@@ -58,22 +58,22 @@ styles/
 ### Responsive Mixins
 ```scss
 /* Tablet, Desktop, and Widescreen */
-@mixin tablet-up {}
-
-/* Desktop and Widescreen */
-@mixin desktop-up {}
-
-/* Desktop, Tablet, and Mobile */
-@mixin desktop-down {}
+@include tablet-up {}
 
 /* Tablet and Mobile */
-@mixin tablet-down {}
+@include tablet-down {}
+
+/* Desktop and Widescreen */
+@include desktop-up {}
+
+/* Desktop, Tablet, and Mobile */
+@include desktop-down {}
 
 /* Responsive Only Views */
-@mixin mobile-only {}
-@mixin tablet-only {}
-@mixin desktop-only {}
-@mixin widescreen-only {}
+@include mobile-only {}
+@include tablet-only {}
+@include desktop-only {}
+@include widescreen-only {}
 ```
 
 ## Browser support
