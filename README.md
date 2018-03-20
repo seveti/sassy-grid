@@ -1,6 +1,6 @@
 <h1 align="center">Sassy Grid</h1>
 <p align="center">
-    A simple <a href="https://smacss.com/">SMACSS</a> style guide using the <a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a>
+    A simple <a href="https://smacss.com/">SMACSS</a> style guide with Responsive and CSS Grid mixins written in Sass
 </p>
 
 ## Quick start
@@ -106,7 +106,7 @@ styles/
 * Opera 44+
 * Safari 10.1+
 * Microsoft Edge 16+
-* Internet Explorer 10+ (-ms- prefix built in)
+* Internet Explorer 10+ (<a href="https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/">CSS Grid IE10+ Implementation</a>)
 
 ## Explore
 [A New View of the Moon](https://www.youtube.com/watch?v=XCrJ3NflOpE)
