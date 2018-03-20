@@ -24,7 +24,6 @@ styles/
 │   ├── _header.scss
 │   ├── _body.scss
 │   ├── _section.scss
-│   ├── _block.scss
 │   └── _footer.scss
 ├── module/
 │   ├── element/
@@ -32,7 +31,7 @@ styles/
 │   │   ├── _link.scss
 │   │   └── _button.scss
 │   └── component/
-│       └── _two-column.scss
+│       └── _block.scss
 ├── state/
 │   └── _custom.scss
 └── theme/
