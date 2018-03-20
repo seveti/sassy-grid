@@ -90,7 +90,7 @@ styles/
 }
 ```
 
-### BEM Markup Example
+### Markup Example
 ```html
 <div class="section section--modifier-class">
     <div class="block block--modifier-class">
