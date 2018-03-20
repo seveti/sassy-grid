@@ -38,21 +38,6 @@ styles/
 ```
 
 ## Usage
-### CSS Grid Mixins
-```scss
-/* Grid */
-@include grid($grid-template-columns: auto, $grid-template-rows: auto);
-
-/* Grid start */
-@include grid-start($grid-column-start: 1, $grid-row-start: 1);
-
-/* Align (start, center, end) */
-@include align($align-self: start);
-
-/* Justify (start, center, end) */
-@include justify($justify-self: start);
-```
-
 ### Responsive Mixins
 ```scss
 /* Tablet, Desktop, and Widescreen */
@@ -72,6 +57,21 @@ styles/
 @include tablet-only {}
 @include desktop-only {}
 @include widescreen-only {}
+```
+
+### CSS Grid Mixins
+```scss
+/* Grid */
+@include grid($grid-template-columns: auto, $grid-template-rows: auto);
+
+/* Grid start */
+@include grid-start($grid-column-start: 1, $grid-row-start: 1);
+
+/* Align (start, center, end) */
+@include align($align-self: start);
+
+/* Justify (start, center, end) */
+@include justify($justify-self: start);
 ```
 
 ### Markup Example
