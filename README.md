@@ -5,7 +5,7 @@
 
 ## Quick start
 * Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
-* Pull Sassy Grid's `main.scss` and `styles/` folder into nearly any project with some of the most popular package managers. No matter the package manager, Sassy Grid will **require a Sass compiler** for setup.
+* Pull Sassy Grid's `main.scss` and `styles/` into nearly any project with some of the most popular package managers. No matter the package manager, Sassy Grid will **require a Sass compiler** for setup.
 
 ## What's included
 Within the download you'll find the following directories and files. You'll see something like this:
@@ -17,6 +17,7 @@ styles/
 │   └── _grid.scss
 │   ├── _mixins.scss
 │   ├── _base.scss
+│   ├── _padding.scss
 │   └── _helper.scss
 └── layout/
 │   ├── _site.scss
@@ -32,6 +33,8 @@ styles/
 │   │   └── _button.scss
 │   └── component/
 │       └── _custom.scss
+├── state/
+│   └── _custom.scss
 └── theme/
     └── _custom.scss
 ```
@@ -39,7 +42,7 @@ styles/
 ## Usage
 ### CSS Grid Mixins
 ```
-// Grid Template
+// Grid
 @include grid($grid-template-columns, $grid-template-rows);
 
 // Grid Start

@@ -69,3 +69,111 @@
 .box-shadow {
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
 }
+
+@mixin padding--small {
+    @include desktop-up {
+        padding: $size-4 $size-6;
+    }
+
+    @include tablet-only {
+        padding: $size-4 $size-4;
+    }
+
+    @include mobile-only {
+        padding: $size-4 $size-6;
+    }
+}
+
+.padding--small { 
+    @include padding--small;
+}
+
+
+@mixin padding--medium {
+    @include desktop-up {
+        padding: $size-3 $size-6;
+    }
+
+    @include tablet-only {
+        padding: $size-3 $size-4;
+    }
+
+    @include mobile-only {
+        padding: $size-3 $size-6;
+    }
+}
+
+.padding--medium { 
+    @include padding--medium;
+}
+
+
+@mixin padding--large {
+    @include desktop-up {
+        padding: $size-2 $size-6;
+    }
+
+    @include tablet-only {
+        padding: $size-2 $size-4;
+    }
+
+    @include mobile-only {
+        padding: $size-2 $size-6;
+    }
+}
+
+.padding--large { 
+    @include padding--large;
+}
+
+@mixin padding-top--small {
+    padding-top: $size-8;
+}
+
+.padding-top--small {
+    @include padding-top--small;
+}
+
+
+@mixin padding-top--medium {
+    padding-top: $size-6;
+}
+
+.padding-top--medium {
+    @include padding-top--medium;
+}
+
+
+@mixin padding-top--large {
+    padding-top: $size-4;
+}
+
+.padding-top--large {
+    @include padding-top--large;
+}
+
+
+.padding-top--xlarge {
+    padding-top: $size-2;
+}
+
+
+.padding-bottom--xsmall {
+    padding-bottom: $size-10;
+}
+
+.padding-bottom--small {
+    padding-bottom: $size-8;
+}
+
+.padding-bottom--medium {
+    padding-bottom: $size-6;
+}
+
+.padding-bottom--large {
+    padding-bottom: $size-4;
+}
+
+.padding-bottom--xlarge {
+    padding-bottom: $size-2;
+}
