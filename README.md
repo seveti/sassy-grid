@@ -76,6 +76,15 @@ styles/
 @include widescreen-only {}
 ```
 
+### Markup Example
+```javascript
+<div class="section section--modifier-class">
+    <div class="block block--modifier-class">
+        <h1 class="block__title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis assumenda quis sit suscipit debitis.</h1>           
+    </div>
+</div>
+```
+
 ## Browser support
 * Chrome 57+
 * Firefox 52+
