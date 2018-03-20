@@ -5,6 +5,7 @@
 
 ## Quick start
 * Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
+* Use Sassy Grid's **source files** into nearly any project with some of the most popular package managers. No matter the package manager, Sassy Grid will **require a Sass compiler** for a setup that matches our official compiled version.
 
 ## What's included
 Within the download you'll find the following directories and files. You'll see something like this:
