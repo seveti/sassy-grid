@@ -17,7 +17,6 @@ styles/
 │   └── _grid.scss
 │   ├── _mixins.scss
 │   ├── _base.scss
-│   ├── _padding.scss
 │   └── _helper.scss
 └── layout/
 │   ├── _site.scss
