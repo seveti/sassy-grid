@@ -36,6 +36,28 @@ styles/
     └── _custom.scss
 ```
 
+## Usage
+### CSS Grid Mixins
+```
+// Create a new grid
+@include grid($grid-template-columns, $grid-template-rows);
+// $grid-template-columns: *integer*;
+// $grid-template-rows: *integer*;
+
+// Grid column/row start
+@include grid-start($grid-column-start, $grid-row-start);
+// $grid-column-start: *integer*;
+// $grid-row-start: *integer*;
+
+// Align
+@include align($align-self);
+// $align-self: start, center, end;
+
+// Justify
+@include align($align-self);
+// $justify-self: start, center, end;
+```
+
 ## Browser support
 * Chrome 57+
 * Firefox 52+
