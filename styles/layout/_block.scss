@@ -3,7 +3,7 @@
     @include grid;
     padding: 0 0 $size-6;
 
-    .block__title, .block__body, .block__image {
+    .block__title, .block__content, .block__image {
         padding: 0 0 $size-8;
     }
 }
