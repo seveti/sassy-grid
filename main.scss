@@ -15,22 +15,16 @@
 @import "./styles/layout/block";
 @import "./styles/layout/footer";
 
-// Element
+// Module > Element
 @import "./styles/module/element/typography";
 @import "./styles/module/element/link";
 @import "./styles/module/element/button";
-@import "./styles/module/element/arrow";
-@import "./styles/module/element/play-button";
 
-// Component
+// Module > Component
 @import "./styles/module/component/two-column";
-@import "./styles/module/component/three-column";
-@import "./styles/module/component/four-column";
-@import "./styles/module/component/tabs";
-@import "./styles/module/component/icon";
-@import "./styles/module/component/hero";
 
 // State
+@import "./styles/state/custom";
 
 // Theme
 @import "./styles/theme/custom";

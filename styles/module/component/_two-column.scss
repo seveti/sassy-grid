@@ -1,3 +1,4 @@
+// Two columns with 1rem gap
 @mixin two-column {
     @include desktop-up {
         @include grid(1fr 1rem 1fr);
@@ -46,66 +47,7 @@
     }
 }
 
-// Two column
+// Default class
 .two-column {
     @include two-column;
-}
-
-// Two column no mobile gap
-.two-column--no-mobile-gap {
-    @include mobile-only {
-        @include grid(1fr, auto auto);
-    }
-
-    .two-column__1 {
-        @include mobile-only {
-            @include grid-start(1);
-        }
-    }
-
-    .two-column__2 {
-        @include mobile-only {
-            @include grid-start(1, 2);
-        }
-    }
-}
-
-// Two column tablet stacked
-.two-column--tablet-stacked {
-
-    @include tablet-down {
-        @include grid(1fr, auto auto);
-    }
-
-    .two-column__1 {
-        padding: 0 0 $size-2;
-
-        @include tablet-down {
-            @include grid-start(1);
-            padding: 0 0 $size-8;
-        }
-    }
-
-    .two-column__2 {
-        padding: 0 0 $size-2;
-
-        @include tablet-down {
-            @include grid-start(1, 2);
-        }
-
-    }
-}
-
-// Two column list
-.two-column--list {
-
-    @include mobile-only {
-        @include grid(1fr, auto 0 auto);
-    }
-
-    .two-column__1, .two-column__2 {
-        @include tablet-up {
-            @include justify(center);
-        }
-    }
 }
