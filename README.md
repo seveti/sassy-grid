@@ -37,8 +37,8 @@ styles/
     └── _custom.scss
 ```
 
-## Usage
-### Responsive Mixins
+## Mixins
+### Responsive
 ```scss
 /* Tablet, Desktop, and Widescreen */
 @include tablet-up {}
@@ -59,7 +59,7 @@ styles/
 @include widescreen-only {}
 ```
 
-### CSS Grid Mixins
+### CSS Grid
 ```scss
 /* Grid */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
@@ -74,7 +74,23 @@ styles/
 @include justify($justify-self: start);
 ```
 
-### Markup Example
+## Usage
+### Component Example
+```scss
+/* Block */
+.block {
+    @include grid;
+
+    @include desktop-up {}
+    @include tablet-only {}
+    @include mobile-only {}
+
+    .block__title {}
+    .block__content {}
+}
+```
+
+### BEM Markup Example
 ```html
 <div class="section section--modifier-class">
     <div class="block block--modifier-class">
