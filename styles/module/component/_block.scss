@@ -1,16 +1,11 @@
 /* Block */
-@mixin block {
+.block {
     @include grid;
     padding: 0 0 $size-6;
 
     .block__title, .block__content, .block__image {
         padding: 0 0 $size-8;
     }
-}
-
-/* Default class */
-.block {
-    @include block;
 }
 
 /* Clear block */
