@@ -42,16 +42,16 @@ styles/
 ## Usage
 ### CSS Grid Mixins
 ```scss
-/* Grid mixin */
+/* Grid */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
 
-/* Grid start mixin */
+/* Grid start */
 @include grid-start($grid-column-start: 1, $grid-row-start: 1);
 
-/* Align mixin (start, center, end) */
+/* Align (start, center, end) */
 @include align($align-self: start);
 
-/* Justify mixin (start, center, end) */
+/* Justify (start, center, end) */
 @include justify($justify-self: start);
 ```
 
