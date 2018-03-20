@@ -11,6 +11,8 @@
 @import "./styles/layout/site";
 @import "./styles/layout/header";
 @import "./styles/layout/body";
+@import "./styles/layout/section";
+@import "./styles/layout/block";
 @import "./styles/layout/footer";
 
 // Element
@@ -21,8 +23,6 @@
 @import "./styles/module/element/play-button";
 
 // Component
-@import "./styles/module/component/section";
-@import "./styles/module/component/block";
 @import "./styles/module/component/two-column";
 @import "./styles/module/component/three-column";
 @import "./styles/module/component/four-column";
