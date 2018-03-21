@@ -33,8 +33,9 @@ blockquote, q {
 blockquote {
   &:before, &:after {
     content: '';
-    content: none; }
+    content: none;
   }
+}
 
 q {
   &:before, &:after {
