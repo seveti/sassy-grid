@@ -1,0 +1,43 @@
+.link {
+    font-family: $font-family-primary;
+    font-size: $font-size-normal;
+    font-weight: $weight-semibold;
+    color: $color-turquoise;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover, &:focus, &:active {
+        text-decoration: underline;
+        color: $color-turquoise-light;
+    }
+}
+
+.link--large {
+    font-size: 20px;
+}
+
+.link--full {
+    font-size: 20px;
+    padding: $size-6 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: $color-orange;
+    color: $color-white;
+
+    &:hover, &:focus, &:active {
+        color: $color-white;
+        text-decoration: none;
+        background-color: $color-orange-dark;
+    }
+}
+
+.link--white {
+    color: $color-white;
+    text-decoration: underline;
+
+    &:hover, &:focus, &:active {
+        text-decoration: none;
+        color: $color-white;
+    }
+}

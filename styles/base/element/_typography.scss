@@ -1,14 +1,16 @@
-/* Typography */
+/* Body */
 body {
   font-family: $font-family-primary;
   font-size: $font-size-normal;
   font-weight: $weight-normal;
 }
 
+/* Italic */
 em, i { 
   font-style: italic;
 }
 
+/* Bold */
 strong { 
   font-weight: $weight-bold;
 }
@@ -18,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-primary;
   color: inherit;
   clear: both;
-  line-height: 1.1;
+  line-height: 1.1;;
 }
 
 h1 {

@@ -1,3 +1,26 @@
+/* Border radius */
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+/* Container */
+.container {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// Small container
+.container--small {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 /* CSS Grid Align */
 .align-start { @include align(start); }
 .align-center { @include align(center); }
@@ -40,10 +63,21 @@
     }
 }
 
+/* Text align left */
+.text-left {
+    text-align: left;
+}
+
 /* Text align center */
 .text-center {
     text-align: center;
 }
+
+/* Text align right */
+.text-right {
+    text-align: right;
+}
+
 
 /* Color white */
 .color-white {

@@ -17,18 +17,19 @@
 }
 
 /* Button */
-@mixin button {
+.button {
   @extend %button-static;
 }
 
-/* Default class */
-.button {
-  @include button;
-}
 
-/* Primary button */
-.button-primary {
-  @include button;
+/* Modifiers */
+
+// Primary button
+.button--primary {
   color: $color-white;
   background-color: $color-turquoise;
+
+  &:hover {
+    background-color: $color-turquoise-light;
+  }
 }

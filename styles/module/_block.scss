@@ -3,32 +3,49 @@
     @include grid;
     padding: 0 0 $size-6;
 
-    .block__title, .block__content, .block__image {
+    > * {
         padding: 0 0 $size-8;
     }
 }
 
-/* Clear block */
+
+/* Modifiers */
+
+// Clear block
 .block--clear {
     padding: 0;
 }
 
-/* X-small block */
+// X-small block
 .block--xsmall {
     padding: 0 0 $size-10;
 }
 
-/* Small block */
+// Small block
 .block--small {
     padding: 0 0 $size-8;
 }
 
-/* Large block */
+// Large block
 .block--large {
     padding: 0 0 $size-4;
 }
 
-/* X-large block */
+// X-large block
 .block--xlarge {
     padding: 0 0 $size-2;
+}
+
+// Title Graphic block
+.block--title-graphic {
+    padding: 0 0 $size-8;
+    text-align: center;
+
+    > *:nth-child(1) {
+        padding: 0 0 $size-4;
+    }
+
+    p {
+        text-align: left;
+    }
 }

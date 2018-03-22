@@ -1,12 +1,5 @@
-/* Container */
-.container {
-    max-width: 1080px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 /* Section */
-@mixin section {
+.section {
     @include grid;
 
     @include desktop-up {
@@ -22,17 +15,15 @@
     }
 }
 
-/* Default class */
-.section {
-    @include section;
-}
 
-/* Clear section */
+/* Modifiers */
+
+// Clear section
 .section--clear {
     padding: 0;
 }
 
-/* Small section */
+// Small section
 .section--small {
     @include desktop-up {
         padding: 2rem $size-6;
@@ -47,7 +38,7 @@
     }
 }
 
-/* Large section */
+// Large section
 .section--large {
     @include desktop-up {
         padding: 5rem $size-6;
