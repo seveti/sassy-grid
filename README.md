@@ -8,7 +8,7 @@
 * Pull Sassy Grid's `main.scss` and `styles/` into nearly any project with some of the most popular package managers. No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here](https://github.com/seveti/sassy-grid-starter)
 
 ## What's included
-Within the `styles/` folder, you will find 5 folders for `base/`, `layout/`, `module`, `state`, and `theme`.
+`base/`, `layout/`, `module/`, `state/`, and `theme/` folders contain the following structure.
 ```
 styles/
 ├── base/
@@ -61,10 +61,10 @@ styles/
 
 ### CSS Grid
 ```scss
-/* Grid */
+/* Set a Grid template */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
 
-/* Grid start */
+/* Choose a column and row start */
 @include grid-start($grid-column-start: 1, $grid-row-start: 1);
 
 /* Align (start, center, end) */
@@ -75,29 +75,18 @@ styles/
 ```
 
 ## Usage
-### Component Example
+### Module Example
 ```scss
-/* Block */
-.block {
-    @include grid;
+/* Module */
+.module {
+    @include grid( /* $grid-template-columns, $grid-template-rows */ );
 
-    @include desktop-up {}
-    @include tablet-only {}
-    @include mobile-only {}
+    @include desktop-up { /* insert styles here */ }
+    @include tablet-only { /* insert styles here */ }
+    @include mobile-only { /* insert styles here */ }
 
-    .block__title {}
-    .block__content {}
+    > *:nth-child(1) { /* insert styles here */ }
 }
-```
-
-### Markup Example
-```html
-<div class="section section--modifier-class">
-    <div class="block block--modifier-class">
-        <h1 class="block__title">Lorem ipsum</h1>
-        <p class="block__content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-</div>
 ```
 
 ## Browser support
