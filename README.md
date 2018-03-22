@@ -42,13 +42,13 @@ styles/
 ### Responsive
 ```scss
 /* Desktop and Widescreen */
-@include desktop-up {}
+@include desktop-up {};
 
 /* Desktop, Tablet, and Mobile */
-@include desktop-down {}
+@include desktop-down {};
 
 /* Tablet, Desktop, and Widescreen */
-@include tablet-up {}
+@include tablet-up {};
 
 /* Tablet and Mobile */
 @include tablet-down {}
@@ -87,7 +87,7 @@ styles/
     @include tablet-only {
         /* insert styles here */
     }
-    
+
     @include mobile-only {
         /* insert styles here */
     }
