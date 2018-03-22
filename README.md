@@ -22,18 +22,11 @@ styles/
 │       ├── _typography.scss
 │       ├── _link.scss
 │       ├── _button.scss
-│       ├── _arrow.scss
-│       └── _play-button.scss
 └── layout/
 │   ├── _header.scss
 │   ├── _body.scss
 │   └── _footer.scss
 ├── module/
-│   ├── _section.scss
-│   ├── _block.scss
-│   ├── _two-column.scss
-│   ├── _three-column.scss
-│   └── _icon.scss
 ├── state/
 └── theme/
 ```
