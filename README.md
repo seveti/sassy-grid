@@ -5,7 +5,9 @@
 
 ## Quick start
 * Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
-* Pull Sassy Grid's `main.scss` and `styles/` into nearly any project. No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here](https://github.com/seveti/sassy-grid-starter)
+* Pull Sassy Grid's `main.scss` and `styles/` into nearly any project.
+
+No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here](https://github.com/seveti/sassy-grid-starter)
 
 ## What's included
 ```
