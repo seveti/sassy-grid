@@ -11,28 +11,8 @@
 
 /* Modifiers */
 
-// Clear block
-.block--clear {
-    padding: 0;
-}
-
-// X-small block
-.block--xsmall {
-    padding: 0 0 $size-10;
-}
-
-// Small block
-.block--small {
-    padding: 0 0 $size-8;
-}
-
 // Large block
 .block--large {
-    padding: 0 0 $size-4;
-}
-
-// X-large block
-.block--xlarge {
     padding: 0 0 $size-2;
 }
 

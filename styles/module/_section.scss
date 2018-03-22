@@ -18,37 +18,7 @@
 
 /* Modifiers */
 
-// Clear section
-.section--clear {
-    padding: 0;
-}
-
-// Small section
-.section--small {
-    @include desktop-up {
-        padding: 2rem $size-6;
-    }
-
-    @include tablet-only {
-        padding: 2rem $size-4;
-    }
-
-    @include mobile-only {
-        padding: 2rem $size-6;
-    }
-}
-
-// Large section
-.section--large {
-    @include desktop-up {
-        padding: 5rem $size-6;
-    }
-
-    @include tablet-only {
-        padding: 4rem $size-4;
-    }
-
-    @include mobile-only {
-        padding: 4rem $size-6;
-    }
+// Grayish white background
+.section--grayish-white {
+    background-color: $color-grayish-white;
 }
