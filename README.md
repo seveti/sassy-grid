@@ -62,7 +62,7 @@ styles/
 
 ### CSS Grid
 ```scss
-/* Set a grid template */
+/* Set grid template */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
 
 /* Define column and row start */
