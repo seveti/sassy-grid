@@ -1,6 +1,6 @@
 <h1 align="center">Sassy Grid</h1>
 <p align="center">
-    A simple <a href="https://smacss.com/">SMACSS</a> style guide with Responsive and CSS Grid mixins written in Sass
+    A simple <a href="https://smacss.com/">SMACSS</a> style guide with sassy mixins for Responsive CSS Grid
 </p>
 
 ## Quick start
