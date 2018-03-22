@@ -84,10 +84,13 @@ styles/
         // insert desktop+ styles here
     }
 
-    @include tablet-only {
+    @include tablet-down {
         // insert tablet styles here
     }
+}
 
+/* Modifiers */
+.module--modified {
     @include mobile-only {
         // insert mobile styles here
     }
