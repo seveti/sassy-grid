@@ -8,7 +8,7 @@
 * Pull Sassy Grid's `main.scss` and `styles/` into nearly any project with some of the most popular package managers. No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here](https://github.com/seveti/sassy-grid-starter)
 
 ## What's included
-Within the download you'll find the following directories and files. You'll see something like this:
+Within the `styles/` folder, you will find 5 folders for `base/`, `layout/`, `module`, `state`, and `theme`.
 ```
 styles/
 ├── base/
