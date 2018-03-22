@@ -5,36 +5,35 @@
 
 ## Quick start
 * Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
-* Pull Sassy Grid's `main.scss` and `styles/` into nearly any project with some of the most popular package managers. No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here](https://github.com/seveti/sassy-grid-starter)
+* Pull Sassy Grid's `main.scss` and `styles/` into nearly any project. No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here](https://github.com/seveti/sassy-grid-starter)
 
 ## What's included
-`base/`, `layout/`, `module/`, `state/`, and `theme/` folders contain the following structure.
 ```
 styles/
 ├── base/
 │   ├── _reset.scss
 │   ├── _responsive.scss
-│   └── _grid.scss
-│   ├── _mixins.scss
+│   ├── _grid.scss
 │   ├── _base.scss
-│   └── _helper.scss
+│   ├── _helper.scss
+│   └── element/
+│       ├── _typography.scss
+│       ├── _link.scss
+│       ├── _button.scss
+│       ├── _arrow.scss
+│       └── _play-button.scss
 └── layout/
-│   ├── _site.scss
 │   ├── _header.scss
 │   ├── _body.scss
-│   ├── _section.scss
 │   └── _footer.scss
 ├── module/
-│   ├── element/
-│   │   ├── _typography.scss
-│   │   ├── _link.scss
-│   │   └── _button.scss
-│   └── component/
-│       └── _block.scss
+│   ├── _section.scss
+│   ├── _block.scss
+│   ├── _two-column.scss
+│   ├── _three-column.scss
+│   └── _icon.scss
 ├── state/
-│   └── _custom.scss
 └── theme/
-    └── _custom.scss
 ```
 
 ## Mixins
