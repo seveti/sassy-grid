@@ -41,19 +41,19 @@ styles/
 ## Mixins
 ### Responsive
 ```scss
-/* Desktop and Widescreen */
+/* Desktop and Widescreen views */
 @include desktop-up {};
 
-/* Desktop, Tablet, and Mobile */
+/* Desktop, Tablet, and Mobile views */
 @include desktop-down {};
 
-/* Tablet, Desktop, and Widescreen */
+/* Tablet, Desktop, and Widescreen views */
 @include tablet-up {};
 
-/* Tablet and Mobile */
+/* Tablet and Mobile views */
 @include tablet-down {}
 
-/* Responsive Only Views */
+/* Responsive only views */
 @include mobile-only {}
 @include tablet-only {}
 @include desktop-only {}
@@ -62,10 +62,10 @@ styles/
 
 ### CSS Grid
 ```scss
-/* Set a Grid template */
+/* Set a grid template */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
 
-/* Choose a column and row start */
+/* Define column and row start */
 @include grid-start($grid-column-start: 1, $grid-row-start: 1);
 
 /* Align (start, center, end) */
