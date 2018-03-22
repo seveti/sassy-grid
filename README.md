@@ -89,7 +89,10 @@ styles/
     }
 }
 
+
 /* Modifiers */
+
+// Modified class
 .module--modified {
     @include mobile-only {
         // insert mobile styles here
