@@ -80,13 +80,9 @@ styles/
 ```scss
 /* Module */
 .module {
-    @include grid( /* $grid-template-columns, $grid-template-rows */ );
-
     @include desktop-up { /* insert styles here */ }
     @include tablet-only { /* insert styles here */ }
     @include mobile-only { /* insert styles here */ }
-
-    > *:nth-child(1) { /* insert styles here */ }
 }
 ```
 
