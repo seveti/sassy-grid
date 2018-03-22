@@ -80,9 +80,17 @@ styles/
 ```scss
 /* Module */
 .module {
-    @include desktop-up { /* insert styles here */ }
-    @include tablet-only { /* insert styles here */ }
-    @include mobile-only { /* insert styles here */ }
+    @include desktop-up {
+        /* insert styles here */
+    }
+
+    @include tablet-only {
+        /* insert styles here */
+    }
+    
+    @include mobile-only {
+        /* insert styles here */
+    }
 }
 ```
 
