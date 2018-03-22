@@ -81,15 +81,15 @@ styles/
 /* Module */
 .module {
     @include desktop-up {
-        /* insert desktop+ styles here */
+        // insert desktop+ styles here
     }
 
     @include tablet-only {
-        /* insert tablet styles here */
+        // insert tablet styles here
     }
 
     @include mobile-only {
-        /* insert mobile styles here */
+        // insert mobile styles here
     }
 }
 ```
