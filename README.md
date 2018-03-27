@@ -69,7 +69,7 @@ styles/
 ```
 
 ## Usage
-### Module Example
+### Module BEM Example
 ```scss
 /* Module */
 .module {
