@@ -74,11 +74,11 @@ styles/
 /* Module */
 .module {
     @include desktop-up {
-        // insert desktop+ styles here
+        // insert desktop up styles here
     }
 
     @include tablet-down {
-        // insert tablet styles here
+        // insert tablet down styles here
     }
 }
 
@@ -88,7 +88,7 @@ styles/
 // Modified class
 .module--modified {
     @include mobile-only {
-        // insert mobile styles here
+        // insert mobile only styles here
     }
 }
 ```
