@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -r /styles ./styles
+cp -r ./styles ./styles
