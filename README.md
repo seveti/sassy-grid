@@ -6,6 +6,7 @@
 ## Quick start
 * Install globally: `npm install -g sassy-grid`
 * Run in a new or existing project: `sassy-grid`
+* Configure `/styles` with your Sass compiler using `main.scss` as an entry point.
 
 No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here ->](https://github.com/seveti/sassy-grid-starter)
 
