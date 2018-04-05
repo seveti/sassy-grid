@@ -1,2 +1,2 @@
 #!/bin/bash
-mkdir helloworld
+cp -r /styles ./styles
