@@ -1,11 +1,11 @@
 <h1 align="center">Sassy Grid</h1>
 <p align="center">
-    A SMACCS style guide to help you build CSS Grid layouts in Sass. IE10+ browser support.
+    ​ A SMACCS base style guide with Responsive and CSS Grid mixins you can add to any project. IE10+ browser support.
 </p>
 
 ## Quick start
-* Install: `npm install -g sassy-grid`
-* Run: `sassy-grid`
+* Install globally: `npm install -g sassy-grid`
+* Run in a new or existing project: `sassy-grid`
 
 No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here ->](https://github.com/seveti/sassy-grid-starter)
 
