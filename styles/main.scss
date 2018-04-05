@@ -1,28 +1,28 @@
 // Base
-@import "./styles/base/reset";
-@import "./styles/base/responsive";
-@import "./styles/base/grid";
-@import "./styles/base/mixins";
-@import "./styles/base/base";
-@import "./styles/base/helper";
+@import "./base/reset";
+@import "./base/responsive";
+@import "./base/grid";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/helper";
 
 // Layout
-@import "./styles/layout/site";
-@import "./styles/layout/header";
-@import "./styles/layout/body";
-@import "./styles/layout/section";
-@import "./styles/layout/footer";
+@import "./layout/site";
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/section";
+@import "./layout/footer";
 
 // Module > Element
-@import "./styles/module/element/typography";
-@import "./styles/module/element/link";
-@import "./styles/module/element/button";
+@import "./module/element/typography";
+@import "./module/element/link";
+@import "./module/element/button";
 
 // Module > Component
-@import "./styles/module/component/block";
+@import "./module/component/block";
 
 // State
-@import "./styles/state/custom";
+@import "./state/custom";
 
 // Theme
-@import "./styles/theme/custom";
+@import "./theme/custom";

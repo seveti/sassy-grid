@@ -1,0 +1,22 @@
+{
+  "name": "sassy-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+      "sassy-grid":"./bin/init.sh"
+  }
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seveti/sassy-grid.git"
+  },
+  "author": "Seveti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seveti/sassy-grid/issues"
+  },
+  "homepage": "https://github.com/seveti/sassy-grid#readme"
+}
