@@ -4,9 +4,8 @@
 </p>
 
 ## Quick start
-* Clone the repo: `git clone https://github.com/seveti/sassy-grid.git`
-* Or: `npm install sassy-grid` `sassy-grid`
-* Pull Sassy Grid's `main.scss` and `styles/` into nearly any project.
+* Install the repo: `npm install -g sassy-grid`
+* Run: `sassy-grid`
 
 No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here ->](https://github.com/seveti/sassy-grid-starter)
 
