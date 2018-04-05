@@ -9,6 +9,8 @@
 
 No matter the application, Sassy Grid will **require a Sass compiler** to set up. [Sassy Grid Starter is also available here ->](https://github.com/seveti/sassy-grid-starter)
 
+Fork and Star!
+
 ## What's included
 ```
 styles/
