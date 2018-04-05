@@ -1,28 +1,24 @@
-// Base
+/* Base */
 @import "./base/reset";
-@import "./base/responsive";
-@import "./base/grid";
-@import "./base/mixins";
+@import "./base/mixins/responsive";
+@import "./base/mixins/grid";
 @import "./base/base";
 @import "./base/helper";
 
-// Layout
-@import "./layout/site";
+@import "./base/element/typography";
+@import "./base/element/link";
+@import "./base/element/button";
+
+/* Layout */
 @import "./layout/header";
 @import "./layout/body";
-@import "./layout/section";
 @import "./layout/footer";
 
-// Module > Element
-@import "./module/element/typography";
-@import "./module/element/link";
-@import "./module/element/button";
+/* Module */
+// Import module here
 
-// Module > Component
-@import "./module/component/block";
+/* State */
+// Import state here
 
-// State
-@import "./state/custom";
-
-// Theme
-@import "./theme/custom";
+/* Theme */
+// Import theme here

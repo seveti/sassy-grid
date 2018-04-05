@@ -38,7 +38,7 @@ styles/
 ### Responsive
 ```scss
 /* Desktop and Widescreen views */
-@include desktop-up {};
+@include desktop-up { // Insert styles here // };
 
 /* Desktop, Tablet, and Mobile views */
 @include desktop-down {};
