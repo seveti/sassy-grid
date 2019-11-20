@@ -1,6 +1,6 @@
 <h1 align="center">Sassy Grid</h1>
 <p align="center">
-    ​ A SMACCS base style guide with Responsive and CSS Grid mixins you can add to any project. IE10+ browser support.
+    ​ A SMACCS base style guide with Responsive CSS Grid mixins you can add to any project. IE10+ browser support.
 </p>
 
 ## Quick start
