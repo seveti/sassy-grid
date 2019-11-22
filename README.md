@@ -57,7 +57,7 @@ styles/
 @include widescreen-only {}
 ```
 
-#### Usage Example
+##### Usage Example
 ```scss
 /* Module */
 .module {
@@ -86,7 +86,7 @@ styles/
 @include justify($justify-self: start);
 ```
 
-#### Usage Example
+##### Usage Example
 ```scss
 /* Module */
 .module {
