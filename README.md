@@ -63,8 +63,8 @@ styles/
 @include widescreen-only {}
 ```
 
-## Usage
-### Module BEM Example
+#### Usage
+##### Module BEM Example
 ```scss
 /* Module */
 .module {
@@ -79,12 +79,12 @@ styles/
 ```
 
 ### CSS Grid
-
+```
 styles/
 ├── base/
 │   └── mixins/
 │       └── _grid.scss
-
+```
 ```scss
 /* Set grid template */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
@@ -99,8 +99,8 @@ styles/
 @include justify($justify-self: start);
 ```
 
-## Usage
-### Module BEM Example
+#### Usage
+##### Module BEM Example
 ```scss
 /* Module */
 .module {
