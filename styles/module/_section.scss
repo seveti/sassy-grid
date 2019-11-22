@@ -1,0 +1,24 @@
+/* Section */
+.section {
+    @include grid;
+
+    @include desktop-up {
+        padding: map-get($sizes, 10) map-get($sizes, 3);
+    }
+
+    @include tablet-only {
+        padding: map-get($sizes, 9) map-get($sizes, 5);
+    }
+
+    @include mobile-only {
+        padding: map-get($sizes, 9) map-get($sizes, 3);
+    }
+}
+
+
+/* Modifiers */
+
+// Grayish white background
+.section--grey {
+    background-color: $color-grey;
+}

@@ -1,7 +1,7 @@
 .link {
     font-family: $font-family-primary;
     font-size: $font-size-normal;
-    font-weight: $weight-semibold;
+    font-weight: map-get($weights, "semibold");
     color: $color-turquoise;
     text-decoration: none;
     cursor: pointer;
@@ -18,7 +18,7 @@
 
 .link--full {
     font-size: 20px;
-    padding: $size-6 0;
+    padding: map-get($sizes, 6) 0;
     display: block;
     width: 100%;
     text-align: center;

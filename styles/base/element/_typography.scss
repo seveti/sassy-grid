@@ -2,7 +2,7 @@
 body {
   font-family: $font-family-primary;
   font-size: $font-size-normal;
-  font-weight: $weight-normal;
+  font-weight: map-get($weights, "normal");
 }
 
 /* Italic */
@@ -12,7 +12,7 @@ em, i {
 
 /* Bold */
 strong { 
-  font-weight: $weight-bold;
+  font-weight: map-get($weights, "bold");
 }
 
 /* Headers */
@@ -20,11 +20,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-primary;
   color: inherit;
   clear: both;
-  line-height: 1.1;;
+  line-height: normal;
 }
 
 h1 {
-  font-weight: $weight-bold;
+  font-weight: map-get($weights, "bold");
   color: $color-h1;
   text-transform: uppercase;
 
@@ -42,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-weight: $weight-bold;
+  font-weight: map-get($weights, "bold");
   color: $color-h2;
   text-transform: uppercase;
 
@@ -60,7 +60,7 @@ h2 {
 }
 
 h3 {
-  font-weight: $weight-semibold;
+  font-weight: map-get($weights, "semibold");
   color: $color-h3;
   text-transform: uppercase;
 
@@ -78,7 +78,7 @@ h3 {
 }
 
 h4 {
-  font-weight: $weight-semibold;
+  font-weight: map-get($weights, "semibold");
   color: $color-h4;
 
   @include desktop-up {

@@ -1,17 +1,61 @@
-/* Tablet, Desktop, and Widescreen */
-@mixin tablet-up { @media only screen and (min-width: $breakpoint-mobile) { @content; } }
-
-/* Desktop and Widescreen */
-@mixin desktop-up { @media only screen and (min-width: $breakpoint-tablet) { @content; } }
+/*
+* Breakpoint values
+*/
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1366px;
 
 /* Desktop, Tablet, and Mobile */
 @mixin desktop-down { @media only screen and (max-width: $breakpoint-desktop) { @content; } }
 
+/* Desktop and Widescreen */
+@mixin desktop-up { @media only screen and (min-width: $breakpoint-tablet + 1) { @content; } }
+
 /* Tablet and Mobile */
 @mixin tablet-down { @media only screen and (max-width: $breakpoint-tablet) { @content; } }
 
-/* Responsive Only Views */
+/* Tablet, Desktop, and Widescreen */
+@mixin tablet-up { @media only screen and (min-width: $breakpoint-mobile + 1) { @content; } }
+
+/* Mobile only */
 @mixin mobile-only { @media only screen and (max-width: $breakpoint-mobile) { @content; } }
-@mixin tablet-only { @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) { @content; } }
-@mixin desktop-only { @media only screen and (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) { @content; } }
-@mixin widescreen-only { @media only screen and (min-width: $breakpoint-desktop) { @content; } }
+
+/* Tablet only */
+@mixin tablet-only { @media only screen and (min-width: $breakpoint-mobile + 1) and (max-width: $breakpoint-tablet) { @content; } }
+
+/* Desktop only */
+@mixin desktop-only { @media only screen and (min-width: $breakpoint-tablet + 1) and (max-width: $breakpoint-desktop) { @content; } }
+
+/* Widescreen only */
+@mixin widescreen-only { @media only screen and (min-width: $breakpoint-desktop + 1) { @content; } }
+
+/*
+* Responsive property mixin
+* Assign mobile, tablet, and desktop up values to same property value (null is valid)
+*
+* Usage:
+    @include responsive(padding,
+        map-get($sizes, 9) map-get($sizes, 3),
+        map-get($sizes, 9) map-get($sizes, 5),
+        map-get($sizes, 10) map-get($sizes, 3),
+    );
+*/
+@mixin responsive($property, $mobile: null, $tablet: null, $desktop: null) {
+    @if $mobile {
+        @include mobile-only {
+            #{$property}: #{$mobile};
+        }
+    }
+
+    @if $tablet {
+        @include tablet-only {
+            #{$property}: #{$tablet};
+        }
+    }
+
+    @if $desktop {
+        @include desktop-up {
+            #{$property}: #{$desktop};
+        }
+    }
+}

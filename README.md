@@ -16,19 +16,20 @@ Fork and Star &#9733;!
 ```
 styles/
 ├── base/
-│   ├── _reset.scss
-│   ├── _responsive.scss
-│   ├── _grid.scss
 │   ├── _base.scss
 │   ├── _helper.scss
-│   └── element/
-│       ├── _typography.scss
-│       ├── _link.scss
-│       ├── _button.scss
+│   ├── _reset.scss
+│   ├── element/
+│   │   ├── _typography.scss
+│   │   ├── _link.scss
+│   │   └── _button.scss
+│   └── mixins/
+│       ├── _grid.scss
+│       └── _responsive.scss
 └── layout/
-│   ├── _header.scss
 │   ├── _body.scss
-│   └── _footer.scss
+│   ├── _footer.scss
+│   └── _header.scss
 ├── module/
 ├── state/
 └── theme/
@@ -36,27 +37,54 @@ styles/
 
 ## Mixins
 ### Responsive
-```scss
-/* Desktop and Widescreen views */
-@include desktop-up { // Insert styles here // };
 
+styles/
+├── base/
+│   └── mixins/
+│       └── _responsive.scss
+
+```scss
 /* Desktop, Tablet, and Mobile views */
 @include desktop-down {};
 
-/* Tablet, Desktop, and Widescreen views */
-@include tablet-up {};
+/* Desktop and Widescreen views */
+@include desktop-up {};
 
 /* Tablet and Mobile views */
 @include tablet-down {}
 
-/* Responsive only views */
+/* Tablet, Desktop, and Widescreen views */
+@include tablet-up {};
+
+/* Only views */
 @include mobile-only {}
 @include tablet-only {}
 @include desktop-only {}
 @include widescreen-only {}
 ```
 
+## Usage
+### Module BEM Example
+```scss
+/* Module */
+.module {
+    @include desktop-up {
+        // insert desktop up styles here
+    }
+
+    @include tablet-down {
+        // insert tablet down styles here
+    }
+}
+```
+
 ### CSS Grid
+
+styles/
+├── base/
+│   └── mixins/
+│       └── _grid.scss
+
 ```scss
 /* Set grid template */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
@@ -77,11 +105,25 @@ styles/
 /* Module */
 .module {
     @include desktop-up {
-        // insert desktop up styles here
-    }
+        @include grid(1fr, 50px 250px 50px);
 
-    @include tablet-down {
-        // insert tablet down styles here
+        .module__header {
+            @include grid-start(1, 1);
+            @include align(start);
+            @include justify(end);
+        }
+
+        .module__body {
+            @include grid-start(1, 2);
+            @include align(center);
+            @include justify(center);
+        }
+
+        .module__footer {
+            @include grid-start(1, 3);
+            @include align(end);
+            @include justify(end);
+        }
     }
 }
 

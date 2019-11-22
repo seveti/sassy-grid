@@ -1,0 +1,42 @@
+$two-column-gap: map-get($sizes, 4);
+
+/* Two column with gap */
+.two-column {
+    @include desktop-up {
+        @include grid(1fr $two-column-gap 1fr);
+    }
+
+    @include tablet-only {
+        @include grid(1fr $two-column-gap 1fr);
+    }
+
+    @include mobile-only {
+        @include grid(1fr, auto $two-column-gap auto);
+    }
+
+    > *:nth-child(1) {
+        @include grid;
+        @include align(start);
+        @include grid-start(1);
+    }
+
+    > *:nth-child(2) {
+        @include grid;
+        @include align(start);
+
+        @include desktop-up {
+            @include grid-start(3);
+        }
+        
+        @include tablet-only {
+            @include grid-start(3, 1);
+        }
+
+        @include mobile-only {
+            @include grid-start(1, 3);
+        }
+    }
+}
+
+
+/* Modifiers */
