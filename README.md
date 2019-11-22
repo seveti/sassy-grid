@@ -39,22 +39,22 @@ styles/
 ### Responsive
 ```scss
 /* Desktop, Tablet, and Mobile views */
-@include desktop-down {};
+@include desktop-down { @content };
 
 /* Desktop and Widescreen views */
-@include desktop-up {};
+@include desktop-up { @content };
 
 /* Tablet and Mobile views */
-@include tablet-down {}
+@include tablet-down { @content };
 
 /* Tablet, Desktop, and Widescreen views */
-@include tablet-up {};
+@include tablet-up { @content };
 
 /* Only views */
-@include mobile-only {}
-@include tablet-only {}
-@include desktop-only {}
-@include widescreen-only {}
+@include mobile-only { @content };
+@include tablet-only { @content };
+@include desktop-only { @content };
+@include widescreen-only { @content };
 ```
 
 ###### Usage Example
