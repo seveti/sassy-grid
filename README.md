@@ -37,12 +37,12 @@ styles/
 
 ## Mixins
 ### Responsive
-
+```
 styles/
 ├── base/
 │   └── mixins/
 │       └── _responsive.scss
-
+```
 ```scss
 /* Desktop, Tablet, and Mobile views */
 @include desktop-down {};
