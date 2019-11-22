@@ -37,12 +37,6 @@ styles/
 
 ## Mixins
 ### Responsive
-```
-styles/
-├── base/
-│   └── mixins/
-│       └── _responsive.scss
-```
 ```scss
 /* Desktop, Tablet, and Mobile views */
 @include desktop-down {};
@@ -64,7 +58,7 @@ styles/
 ```
 
 #### Usage
-##### Module BEM Example
+Module BEM Example
 ```scss
 /* Module */
 .module {
@@ -78,13 +72,7 @@ styles/
 }
 ```
 
-### CSS Grid
-```
-styles/
-├── base/
-│   └── mixins/
-│       └── _grid.scss
-```
+### Grid
 ```scss
 /* Set grid template */
 @include grid($grid-template-columns: auto, $grid-template-rows: auto);
@@ -100,7 +88,7 @@ styles/
 ```
 
 #### Usage
-##### Module BEM Example
+Module BEM Example
 ```scss
 /* Module */
 .module {
