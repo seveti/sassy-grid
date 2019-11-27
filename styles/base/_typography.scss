@@ -1,0 +1,97 @@
+/* Type */
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,80');
+$font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
+
+/* Body */
+body {
+  font-family: $font-family-primary;
+  font-size: map-get($sizes, 4);
+  font-weight: map-get($weights, "normal");
+}
+
+/* Italic */
+em, i { 
+  font-style: italic;
+}
+
+/* Bold */
+strong { 
+  font-weight: map-get($weights, "bold");
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+  color: inherit;
+  clear: both;
+  line-height: normal;
+}
+
+h1 {
+  font-weight: map-get($weights, "bold");
+  color: $color-grey-dark;
+  text-transform: uppercase;
+
+  @include responsive(font-size,
+    20px,
+    26px,
+    30px
+  );
+}
+
+h2 {
+  font-weight: map-get($weights, "bold");
+  color: $color-turquoise;
+  text-transform: uppercase;
+
+  @include responsive(font-size,
+    20px,
+    26px,
+    26px
+  );
+}
+
+h3 {
+  font-weight: map-get($weights, "semibold");
+  color: $color-grey-dark;
+  text-transform: uppercase;
+
+  @include responsive(font-size,
+    20px,
+    20px,
+    20px
+  );
+}
+
+h4 {
+  font-weight: map-get($weights, "semibold");
+  color: $color-grey-dark;
+
+  @include responsive(font-size,
+    16px,
+    16px,
+    20px
+  );
+}
+
+h5 {
+  font-weight: map-get($weights, "bold");
+  color: $color-grey-dark;
+
+  @include responsive(font-size,
+    16px,
+    16px,
+    18px
+  );
+}
+
+h6 {
+  font-weight: map-get($weights, "bold");
+  color: $color-grey-dark;
+
+  @include responsive(font-size,
+    16px,
+    16px,
+    16px
+  );
+}

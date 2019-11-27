@@ -59,3 +59,25 @@ $breakpoint-desktop: 1366px;
         }
     }
 }
+
+/* Hide on desktop */
+.hide-desktop {
+    @include tablet-up {
+        display: none;
+    }
+
+    @include mobile-only {
+        display: block;
+    }
+}
+
+/* Hide on mobile */
+.hide-mobile {
+    @include tablet-up {
+        display: block;
+    }
+
+    @include mobile-only {
+        display: none;
+    }
+}

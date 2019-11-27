@@ -1,0 +1,13 @@
+/* Container */
+.container {
+    max-width: 1080px;
+    width: 100%;
+    @include justify(center);
+}
+
+// Small container
+.container--small {
+    max-width: 800px;
+    width: 100%;
+    @include justify(center);
+}

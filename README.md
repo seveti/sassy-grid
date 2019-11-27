@@ -16,21 +16,19 @@ Fork and Star &#9733;!
 ```
 styles/
 ├── base/
-│   ├── _base.scss
+│   ├── _button.scss
+│   ├── _colors.scss
 │   ├── _helper.scss
+│   ├── _link.scss
 │   ├── _reset.scss
-│   ├── element/
-│   │   ├── _typography.scss
-│   │   ├── _link.scss
-│   │   └── _button.scss
+│   ├── _typography.scss
+│   ├── _weights.scss
 │   └── mixins/
 │       ├── _grid.scss
-│       └── _responsive.scss
-└── layout/
-│   ├── _body.scss
-│   ├── _footer.scss
-│   └── _header.scss
-├── module/
+│       ├── _responsive.scss
+│       └── _utility.scss
+├── blocks/
+├── layout/
 ├── state/
 └── theme/
 ```

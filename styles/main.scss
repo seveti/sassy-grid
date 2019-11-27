@@ -1,26 +1,27 @@
 /* Base */
 @import "./base/reset";
-@import "./base/mixins/mixins";
-@import "./base/base";
+@import "./base/mixins/grid";
+@import "./base/mixins/responsive";
+@import "./base/mixins/utility";
+@import "./base/colors";
+@import "./base/sizes";
+@import "./base/weights";
 @import "./base/helper";
-
-@import "./base/element/typography";
-@import "./base/element/link";
-@import "./base/element/button";
-@import "./base/element/arrow";
-@import "./base/element/play-button";
+@import "./base/typography";
+@import "./base/link";
+@import "./base/button";
 
 /* Layout */
-@import "./layout/header";
-@import "./layout/body";
-@import "./layout/footer";
+@import "./layout/container";
+@import "./layout/section";
+@import "./layout/two-column";
+@import "./layout/three-column";
+@import "./layout/three-block-hero";
 
-/* Module */
-@import "./module/section";
-@import "./module/block";
-@import "./module/two-column";
-@import "./module/three-column";
-@import "./module/three-block-hero";
+/* Blocks */
+@import "./blocks/block";
+@import "./blocks/arrow";
+@import "./blocks/play-button";
 
 /* State */
 // Import state here

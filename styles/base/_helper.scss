@@ -13,47 +13,6 @@
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05)
 }
 
-/* Color white */
-.color-white {
-    color: $color-white;
-}
-
-/* Container */
-.container {
-    max-width: 1080px;
-    width: 100%;
-    @include justify(center);
-}
-
-// Small container
-.container--small {
-    max-width: 800px;
-    width: 100%;
-    @include justify(center);
-}
-
-/* Hide on desktop */
-.hide-desktop {
-    @include tablet-up {
-        display: none;
-    }
-
-    @include mobile-only {
-        display: block;
-    }
-}
-
-/* Hide on mobile */
-.hide-mobile {
-    @include tablet-up {
-        display: block;
-    }
-
-    @include mobile-only {
-        display: none;
-    }
-}
-
 /* Max width small */
 .max-width-small {
     max-width: 250px;
@@ -77,4 +36,10 @@
 /* Text align right */
 .text-right {
     text-align: right;
+}
+
+// TODO: Generate all color classes in _colors.scsss
+/* Color white */
+.color-white {
+    color: $color-white;
 }

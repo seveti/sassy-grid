@@ -11,15 +11,16 @@ $color-greyish-white: #F0EFF0; // Greyish White color
 $color-auburn: #85200C; // Auburn color
 $color-old-wood: #2F2F28; // Old Wood color
 
-$color-primary: $color-turquoise;
-$color-secondary: $color-turquoise-light;
+/*
+* Colors helper mixin
+*
+* Usage:
+    map-get($colors, "black")
+*/
 
-$color-h1: $color-grey-dark;
-$color-h2: $color-turquoise;
-$color-h3: $color-grey-dark;
-$color-h4: $color-grey-dark;
+// TODO FINISH VALUES
 
-/* Type */
-@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,80');
-$font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
-$font-size-normal: map-get($sizes, 4);
+$colors: (
+    "black": #000000,
+    "white": #ffffff,
+);
