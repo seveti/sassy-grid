@@ -71,6 +71,9 @@ $ie: false;
     }
 }
 
+/* CSS Grid */
+.grid { @include grid; }
+
 /* CSS Grid Align */
 .align-start { @include align(start); }
 .align-center { @include align(center); }
